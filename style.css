@@ -1,0 +1,200 @@
+/* Google Fonts (Inter) を読み込みます */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Interフォントを全体に適用します */
+body {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* コンテナスタイル */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* メインコンテンツ */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* メインタイトル */
+.main-title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/* イベント詳細セクション */
+.event-details {
+  margin: 3rem 0;
+  border-top: 2px solid #374151;
+  border-bottom: 2px solid #374151;
+  width: 100%;
+  max-width: 42rem;
+  padding: 2rem 0;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* エントリーセクション */
+.entry-section {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.entry-button {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.entry-button:hover {
+  background-color: #e5e7eb;
+}
+
+.sns-info {
+  margin-top: 1.5rem;
+  color: #9ca3af;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+}
+
+.sns-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sns-links a:hover {
+  color: #d1d5db;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* アニメーション */
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* アニメーションの遅延を設定 */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .main-title {
+    font-size: 4.5rem;
+  }
+
+  .event-details {
+    margin: 4rem 0;
+  }
+
+  .info-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 6rem;
+  }
+}

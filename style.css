@@ -13,8 +13,8 @@ body {
   font-family: "Inter", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: rgb(35,35,35);
+  color: rgb(251, 251, 251);
 }
 
 /* コンテナスタイル */

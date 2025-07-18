@@ -104,7 +104,9 @@ main {
   display: inline-block;
   transition: background-color 0.3s ease;
   border: none;
+  border-radius: 0.25rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .entry-button:hover {
@@ -144,6 +146,8 @@ main {
   height: 6rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+
+  transition: all 0.3s ease;
 
   img {
     width: 3rem;

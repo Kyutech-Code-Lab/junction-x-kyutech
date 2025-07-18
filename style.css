@@ -186,24 +186,6 @@ footer {
 
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
-  .container {
-    padding: 0 2rem;
-  }
-
-  .main-title {
-    font-size: 4.5rem;
-  }
-
-  .event-details {
-    margin: 4rem 0;
-  }
-
-  .info-value {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
   .main-title {
     font-size: 6rem;
   }

@@ -108,30 +108,54 @@ main {
 }
 
 .entry-button:hover {
-  background-color: #e5e7eb;
+  background-color: #d1d3d8;
 }
 
 .sns-info {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   color: #9ca3af;
 }
 
 .sns-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
   margin-top: 1rem;
   font-size: 1.125rem;
 }
 
 .sns-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 10rem;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.sns-links a:hover {
-  color: #d1d5db;
+.x-logo,
+.instagram-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.x-logo:hover,
+.instagram-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* hover:bg-white/10 */
+  border-color: rgba(255, 255, 255, 0.4); /* hover:border-white/40 */
+  transform: scale(1.1); /* hover:scale-110 */
 }
 
 /* フッター */

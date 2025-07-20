@@ -13,7 +13,7 @@ body {
   font-family: "Inter", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(35,35,35);
+  background-color: rgb(35, 35, 35);
   color: rgb(251, 251, 251);
 }
 
@@ -128,7 +128,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 10rem;
   color: #ffffff;
   text-decoration: none;
@@ -148,9 +148,13 @@ main {
   transition: all 0.3s ease;
 
   img {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: auto;
   }
+}
+
+.instagram-logo {
+  margin-bottom: 0.5rem;
 }
 
 .x-logo:hover,

@@ -43,8 +43,6 @@ main {
 .main-title {
   font-size: 3rem;
   font-weight: 900;
-  letter-spacing: -0.05em;
-  text-transform: uppercase;
   margin-bottom: 2rem;
 }
 

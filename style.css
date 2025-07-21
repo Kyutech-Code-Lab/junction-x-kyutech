@@ -13,7 +13,7 @@ body {
   font-family: "Inter", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(35,35,35);
+  background-color: rgb(35, 35, 35);
   color: rgb(251, 251, 251);
 }
 
@@ -89,7 +89,7 @@ main {
 /* エントリーセクション */
 .entry-section {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .entry-button {
@@ -102,34 +102,55 @@ main {
   display: inline-block;
   transition: background-color 0.3s ease;
   border: none;
+  border-radius: 0.25rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .entry-button:hover {
-  background-color: #e5e7eb;
+  background-color: #d1d3d8;
 }
 
 .sns-info {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   color: #9ca3af;
 }
 
 .sns-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 1rem;
   font-size: 1.125rem;
 }
 
-.sns-links a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.x-logo,
+.instagram-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+
+  img {
+    width: 2.5rem;
+    height: auto;
+  }
 }
 
-.sns-links a:hover {
-  color: #d1d5db;
+.x-logo:hover,
+.instagram-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.instagram-logo {
+  margin-bottom: 0.5rem;
 }
 
 /* フッター */

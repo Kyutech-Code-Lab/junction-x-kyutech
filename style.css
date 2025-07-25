@@ -199,6 +199,84 @@ footer {
   animation-delay: 0.8s;
 }
 
+.delay-5 {
+  animation-delay: 1s;
+}
+
+/* パートナーセクション */
+.partners-section {
+  width: 100vw;
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.partners-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: rgb(251, 251, 251);
+  letter-spacing: 0.1em;
+}
+
+.partners-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+}
+
+.partner-logo {
+  flex: 0 0 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.partner-logo img {
+  max-width: 120px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: brightness(0.8) contrast(1.2);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: brightness(1) contrast(1);
+}
+
+/* 無限スライドアニメーション */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--track-width)));
+  }
+}
+
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
   .main-title {

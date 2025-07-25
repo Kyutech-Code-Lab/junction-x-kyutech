@@ -70,3 +70,21 @@ window.addEventListener("load", function () {
   // ページが完全に読み込まれた後の処理
   // 例：画像の遅延読み込み、外部APIの呼び出しなど
 });
+
+// パートナーセクションのアニメーション
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("partners-track");
+  const slider = document.getElementById("partners-slider");
+
+  // 無限スクロールのためにロゴを複製
+  const logos = Array.from(track.children);
+  logos.forEach((logo) => {
+    const clone = logo.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
+  // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
+  const trackWidth = track.getBoundingClientRect().width / 2;
+  track.style.setProperty("--track-width", `${trackWidth}px`);
+});

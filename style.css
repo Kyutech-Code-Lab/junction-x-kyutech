@@ -86,6 +86,14 @@ main {
   line-height: 1.4;
 }
 
+/* Junctionについてセクション */
+.about-junction {
+  max-width: 42rem;
+  padding: 1.5rem;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
 /* エントリーセクション */
 .entry-section {
   width: 100%;
@@ -111,6 +119,7 @@ main {
   background-color: #d1d3d8;
 }
 
+/* SNSリンクセクション */
 .sns-info {
   margin-top: 3rem;
   margin-bottom: 1.5rem;

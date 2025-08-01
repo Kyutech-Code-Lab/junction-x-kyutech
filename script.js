@@ -73,8 +73,48 @@ window.addEventListener("load", function () {
 
 // パートナーセクションのアニメーション
 document.addEventListener("DOMContentLoaded", () => {
+  const partnersSection = document.getElementById("partners-section");
   const track = document.getElementById("partners-track");
   const slider = document.getElementById("partners-slider");
+
+  // パートナーが存在しない場合は、セクション全体を非表示にする
+  if (!hasPartners()) {
+    partnersSection.style.display = "none";
+    return;
+  }
+
+  // パートナーが存在する場合は、セクションを表示
+  partnersSection.style.display = "block";
+
+  // パートナーロゴを動的に生成
+  const partners = getPartnersData();
+
+  // 既存のコンテンツをクリア
+  track.innerHTML = "";
+
+  // パートナーロゴを生成
+  partners.forEach((partner) => {
+    const logoDiv = document.createElement("div");
+    logoDiv.className = "partner-logo";
+
+    const img = document.createElement("img");
+    img.src = partner.logo;
+    img.alt = `${partner.name} Logo`;
+
+    // URLが指定されている場合はリンクとして設定
+    if (partner.url) {
+      const link = document.createElement("a");
+      link.href = partner.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.appendChild(img);
+      logoDiv.appendChild(link);
+    } else {
+      logoDiv.appendChild(img);
+    }
+
+    track.appendChild(logoDiv);
+  });
 
   // 無限スクロールのためにロゴを複製
   const logos = Array.from(track.children);

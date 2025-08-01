@@ -26,14 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     entryButton.addEventListener("click", function (e) {
       e.preventDefault();
 
-      // ここでエントリーページへのリダイレクトや
-      // モーダルの表示などを実装できます
-      console.log("Entry button clicked");
+      // Microsoft Formsのエントリーページにリダイレクト
+      console.log("Entry button clicked - redirecting to entry form");
 
-      // 現在はアラートで代用
-      alert(
-        "エントリーページは準備中です。SNSで最新情報をチェックしてください。"
-      );
+      window.open("https://forms.office.com/r/qe9S5n3Q5p", "_blank");
     });
   }
 });

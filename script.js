@@ -26,14 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     entryButton.addEventListener("click", function (e) {
       e.preventDefault();
 
-      // ここでエントリーページへのリダイレクトや
-      // モーダルの表示などを実装できます
-      console.log("Entry button clicked");
+      // Microsoft Formsのエントリーページにリダイレクト
+      console.log("Entry button clicked - redirecting to entry form");
 
-      // 現在はアラートで代用
-      alert(
-        "エントリーページは準備中です。SNSで最新情報をチェックしてください。"
-      );
+      window.open("https://forms.office.com/r/qe9S5n3Q5p", "_blank");
     });
   }
 });
@@ -69,6 +65,35 @@ window.addEventListener("load", function () {
 
   // ページが完全に読み込まれた後の処理
   // 例：画像の遅延読み込み、外部APIの呼び出しなど
+});
+
+// FAQ アコーディオン機能
+document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const answer = this.nextElementSibling;
+      const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+      // 他のアコーディオンを閉じる
+      faqQuestions.forEach((otherQuestion) => {
+        if (otherQuestion !== this) {
+          otherQuestion.setAttribute("aria-expanded", "false");
+          otherQuestion.nextElementSibling.classList.remove("active");
+        }
+      });
+
+      // 現在のアコーディオンを切り替える
+      if (isExpanded) {
+        this.setAttribute("aria-expanded", "false");
+        answer.classList.remove("active");
+      } else {
+        this.setAttribute("aria-expanded", "true");
+        answer.classList.add("active");
+      }
+    });
+  });
 });
 
 // パートナーセクションのアニメーション

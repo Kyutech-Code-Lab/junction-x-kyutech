@@ -191,6 +191,21 @@ footer {
   }
 }
 
+/* 単純なフェードイン（タイムテーブルで使用） */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* アニメーションの遅延を設定 */
 .delay-1 {
   animation-delay: 0.2s;
@@ -291,6 +306,84 @@ footer {
   font-size: 0.9rem;
   line-height: 1.5;
   color: rgba(251, 251, 251, 0.7);
+}
+
+/* タイムテーブル（SCHEDULE）セクション */
+.schedule-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 3rem auto;
+  text-align: left;
+}
+
+.schedule-section h2 {
+  font-size: 1.875rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.day-schedule h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #374151;
+}
+
+.day-schedule ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.day-schedule li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.day-schedule li:last-child {
+  margin-bottom: 0;
+}
+
+.day-schedule time {
+  width: 6rem;
+  flex: 0 0 auto;
+  color: #9ca3af;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.day-schedule span {
+  flex: 1;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .schedule-section {
+    margin: 4rem auto;
+  }
+
+  .schedule-section h2 {
+    font-size: 2.25rem;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
 }
 
 /* レスポンシブデザイン */

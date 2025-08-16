@@ -88,21 +88,21 @@ main {
 
 /* Junctionについてセクション */
 .about-junction {
-  max-width: 42rem;
+  max-width: 800px;
   padding: 1.5rem;
   margin-top: 2rem;
   line-height: 1.6;
   color: #9ca3af;
+}
 
-  .about-text {
-    font-size: 1.25rem;
-  }
+.about-text {
+  font-size: 1.25rem;
 }
 
 /* エントリーセクション */
 .entry-section {
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 3rem;
 }
 
 .entry-button {
@@ -389,12 +389,13 @@ footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
   }
-}
 
-/* レスポンシブデザイン */
-@media (min-width: 768px) {
   .main-title {
     font-size: 6rem;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
   }
 
   .faq-title {

@@ -243,10 +243,12 @@ footer {
 }
 
 .partners-slider {
-  width: 100%;
+  width: 50%;
+  min-width: 350px;
   overflow: hidden;
   position: relative;
   padding: 2rem 0;
+  margin: 0 auto;
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
@@ -267,7 +269,7 @@ footer {
   display: flex;
   align-items: center;
   width: fit-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 4s linear infinite;
 }
 
 .partner-logo {
@@ -395,11 +397,11 @@ footer {
 }
 
 .schedule-section h2 {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  color: rgb(251, 251, 251);
+  letter-spacing: 0.1em;
   text-align: center;
 }
 

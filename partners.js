@@ -2,12 +2,24 @@
 
 // パートナー企業のデータ
 const partnersData = [
-  // 現在はサンプルデータをコメントアウト
+  // サンプルデータをコメントアウト
   // {
   //   name: "Sample Partner 1",
   //   logo: "images/junction-x-logo-circle.png",
   //   url: "#"
   // },
+  {
+    name: "Kyushu Electric Power Co., Inc.",
+    logo: "images/partners-logo/kyushu-electric-power.png",
+  },
+  {
+    name: "Kyushu Electric Power Co., Inc.",
+    logo: "images/partners-logo/kyushu-electric-power.png",
+  },
+  {
+    name: "Kyushu Electric Power Co., Inc.",
+    logo: "images/partners-logo/kyushu-electric-power.png",
+  },
 ];
 
 // パートナーデータを取得する関数

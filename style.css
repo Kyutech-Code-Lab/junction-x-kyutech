@@ -281,16 +281,23 @@ footer {
   margin: 0 2rem;
 }
 
+/* 白背景が必要なロゴ用のスタイル */
+.partner-logo.white-bg img {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+}
+
 .partner-logo img {
   max-width: 120px;
   max-height: 80px;
   object-fit: contain;
-  filter: brightness(0.8) contrast(1.2);
+  filter: brightness(1) contrast(1);
   transition: filter 0.3s ease;
 }
 
-.partner-logo:hover img {
-  filter: brightness(1) contrast(1);
+/* 白背景でない場合のimg要素のスタイルは従来通り */
+.partner-logo:not(.white-bg) img {
+  filter: brightness(0.8) contrast(1.2);
 }
 
 /* 無限スライドアニメーション */

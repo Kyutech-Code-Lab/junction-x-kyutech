@@ -122,6 +122,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const logoDiv = document.createElement("div");
     logoDiv.className = "partner-logo";
 
+    // 白背景設定がある場合はクラスを追加
+    if (partner.whiteBg) {
+      logoDiv.classList.add("white-bg");
+    }
+
     const img = document.createElement("img");
     img.src = partner.logo;
     img.alt = `${partner.name} Logo`;

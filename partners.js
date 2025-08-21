@@ -6,11 +6,13 @@ const partnersData = [
   // {
   //   name: "Sample Partner 1",
   //   logo: "images/junction-x-logo-circle.png",
-  //   url: "#"
+  //   url: "#",
+  //   whiteBg: false
   // },
   {
     name: "Kyushu Electric Power Co., Inc.",
     logo: "images/partners-logo/kyushu-electric-power.png",
+    whiteBg: true, // 黒い文字があるロゴなので白背景を使用
   },
 ];
 

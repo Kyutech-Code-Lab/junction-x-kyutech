@@ -26,7 +26,7 @@
         <div class="fade-in-up delay-1">
           <h1 class="main-title">Junction X Kyutech</h1>
           <img
-            src="images/junction-x-log-circle.png"
+            src="images/junction-x-logo-circle.png"
             alt="Junction X Logo"
             class="logo"
           />
@@ -279,20 +279,48 @@
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Are lodging and parking included?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>
-              There's a rest zone inside the venue, but you'll need to arrange
-              your own accommodation. No designated parking, so public transport
-              is best.
-            </p>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are lodging and parking included?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                There's a rest zone inside the venue, but you'll need to arrange
+                your own accommodation. No designated parking, so public
+                transport is best.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+
+        <!-- パートナーセクション -->
+        <div
+          class="partners-section fade-in-up delay-3"
+          id="partners-section"
+          style="display: none"
+        >
+          <h2 class="partners-title">PARTNERS</h2>
+          <div class="partners-slider" id="partners-slider">
+            <div class="partners-track" id="partners-track">
+              <!-- パートナーロゴは JavaScript で動的に生成されます -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Junctionについて -->
+        <div class="about-junction fade-in-up delay-3">
+          <p class="about-text">
+            Junction is a global hackathon and tech community, spreading the
+            word of empowering people to create with technology. The JunctionX
+            program was created for local tech communities around the world to
+            have a way to create their own hackathon, and bring developers,
+            designers and all other techies together. All JunctionX events are
+            individual events created by the local community, supported by
+            Junction.
+          </p>
+        </div>
+      </main>
 
       <!-- フッター -->
       <footer class="fade-in-up delay-5">
@@ -301,6 +329,7 @@
     </div>
 
     <!-- JavaScript ファイルを読み込みます -->
+    <script src="partners.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -95,3 +95,77 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// パートナーセクションのアニメーション
+document.addEventListener("DOMContentLoaded", () => {
+  const partnersSection = document.getElementById("partners-section");
+  const track = document.getElementById("partners-track");
+  const slider = document.getElementById("partners-slider");
+
+  // パートナーが存在しない場合は、セクション全体を非表示にする
+  if (!hasPartners()) {
+    partnersSection.style.display = "none";
+    return;
+  }
+
+  // パートナーが存在する場合は、セクションを表示
+  partnersSection.style.display = "block";
+
+  // パートナーロゴを動的に生成
+  const partners = getPartnersData();
+
+  // 既存のコンテンツをクリア
+  track.innerHTML = "";
+
+  // パートナーロゴを生成
+  partners.forEach((partner) => {
+    const logoDiv = document.createElement("div");
+    logoDiv.className = "partner-logo";
+
+    // 白背景設定がある場合はクラスを追加
+    if (partner.whiteBg) {
+      logoDiv.classList.add("white-bg");
+    }
+
+    const img = document.createElement("img");
+    img.src = partner.logo;
+    img.alt = `${partner.name} Logo`;
+
+    // URLが指定されている場合はリンクとして設定
+    if (partner.url) {
+      const link = document.createElement("a");
+      link.href = partner.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.appendChild(img);
+      logoDiv.appendChild(link);
+    } else {
+      logoDiv.appendChild(img);
+    }
+
+    track.appendChild(logoDiv);
+  });
+
+  // パートナー数に応じて動作を変更
+  if (partners.length <= 2) {
+    // パートナーが1つか2つの場合は中央配置（スライドなし）
+    track.classList.add("static");
+    slider.classList.add("static");
+  } else {
+    // パートナーが3つ以上の場合は無限スクロール
+    track.classList.remove("static");
+    slider.classList.remove("static");
+
+    // 無限スクロールのためにロゴを複製
+    const logos = Array.from(track.children);
+    logos.forEach((logo) => {
+      const clone = logo.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
+    // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
+    const trackWidth = track.getBoundingClientRect().width / 2;
+    track.style.setProperty("--track-width", `${trackWidth}px`);
+  }
+});

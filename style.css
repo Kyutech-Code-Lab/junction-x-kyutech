@@ -303,6 +303,18 @@ footer {
   }
 }
 
+/* パートナーが少数の場合の中央配置 */
+.partners-track.static {
+  animation: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.partners-slider.static {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
 .delay-5 {
   animation-delay: 1s;
 }

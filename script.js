@@ -141,15 +141,26 @@ document.addEventListener("DOMContentLoaded", () => {
     track.appendChild(logoDiv);
   });
 
-  // 無限スクロールのためにロゴを複製
-  const logos = Array.from(track.children);
-  logos.forEach((logo) => {
-    const clone = logo.cloneNode(true);
-    track.appendChild(clone);
-  });
+  // パートナー数に応じて動作を変更
+  if (partners.length <= 2) {
+    // パートナーが1つか2つの場合は中央配置（スライドなし）
+    track.classList.add("static");
+    slider.classList.add("static");
+  } else {
+    // パートナーが3つ以上の場合は無限スクロール
+    track.classList.remove("static");
+    slider.classList.remove("static");
 
-  // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
-  // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
-  const trackWidth = track.getBoundingClientRect().width / 2;
-  track.style.setProperty("--track-width", `${trackWidth}px`);
+    // 無限スクロールのためにロゴを複製
+    const logos = Array.from(track.children);
+    logos.forEach((logo) => {
+      const clone = logo.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
+    // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
+    const trackWidth = track.getBoundingClientRect().width / 2;
+    track.style.setProperty("--track-width", `${trackWidth}px`);
+  }
 });

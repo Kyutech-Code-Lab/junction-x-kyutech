@@ -12,14 +12,6 @@ const partnersData = [
     name: "Kyushu Electric Power Co., Inc.",
     logo: "images/partners-logo/kyushu-electric-power.png",
   },
-  {
-    name: "Kyushu Electric Power Co., Inc.",
-    logo: "images/partners-logo/kyushu-electric-power.png",
-  },
-  {
-    name: "Kyushu Electric Power Co., Inc.",
-    logo: "images/partners-logo/kyushu-electric-power.png",
-  },
 ];
 
 // パートナーデータを取得する関数

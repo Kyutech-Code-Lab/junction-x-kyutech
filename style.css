@@ -509,3 +509,59 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* Supporting University セクション */
+.supporting-university-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 4rem auto 3rem;
+  text-align: center;
+}
+
+.supporting-university-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: rgb(251, 251, 251);
+  letter-spacing: 0.1em;
+}
+
+.university-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.university-logo {
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.university-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* kit.png の背景を白に設定 */
+.university-logo.kit {
+  background-color: white;
+  padding: 1rem;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .supporting-university-title {
+    font-size: 2.25rem;
+  }
+
+  .university-logos {
+    gap: 4rem;
+  }
+
+  .university-logo {
+    max-width: 150px;
+  }
+}

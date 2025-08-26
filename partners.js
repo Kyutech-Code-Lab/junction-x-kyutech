@@ -18,6 +18,10 @@ const partnersData = [
     name: "Pixiv",
     logo: "images/partners-logo/pixiv_white.svg",
   },
+  {
+    name: "TOYOTA MOTOR KYUSHU",
+    logo: "images/partners-logo/toyota-motor-kyushu.png",
+  }
 ];
 
 // パートナーデータを取得する関数

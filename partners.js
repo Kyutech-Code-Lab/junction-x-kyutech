@@ -14,6 +14,10 @@ const partnersData = [
     logo: "images/partners-logo/kyushu-electric-power.png",
     whiteBg: true, // 黒い文字があるロゴなので白背景を使用
   },
+  {
+    name: "Pixiv",
+    logo: "images/partners-logo/pixiv_white.svg",
+  },
 ];
 
 // パートナーデータを取得する関数

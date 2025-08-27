@@ -21,7 +21,11 @@ const partnersData = [
   {
     name: "TOYOTA MOTOR KYUSHU",
     logo: "images/partners-logo/toyota-motor-kyushu.png",
-  }
+  },
+  {
+    name: "KYOCERA",
+    logo: "images/partners-logo/kyocera.png",
+  },
 ];
 
 // パートナーデータを取得する関数

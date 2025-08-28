@@ -67,35 +67,6 @@ window.addEventListener("load", function () {
   // 例：画像の遅延読み込み、外部APIの呼び出しなど
 });
 
-// FAQ アコーディオン機能
-document.addEventListener("DOMContentLoaded", function () {
-  const faqQuestions = document.querySelectorAll(".faq-question");
-
-  faqQuestions.forEach((question) => {
-    question.addEventListener("click", function () {
-      const answer = this.nextElementSibling;
-      const isExpanded = this.getAttribute("aria-expanded") === "true";
-
-      // 他のアコーディオンを閉じる
-      faqQuestions.forEach((otherQuestion) => {
-        if (otherQuestion !== this) {
-          otherQuestion.setAttribute("aria-expanded", "false");
-          otherQuestion.nextElementSibling.classList.remove("active");
-        }
-      });
-
-      // 現在のアコーディオンを切り替える
-      if (isExpanded) {
-        this.setAttribute("aria-expanded", "false");
-        answer.classList.remove("active");
-      } else {
-        this.setAttribute("aria-expanded", "true");
-        answer.classList.add("active");
-      }
-    });
-  });
-});
-
 // パートナーセクションのアニメーション
 document.addEventListener("DOMContentLoaded", () => {
   const partnersSection = document.getElementById("partners-section");
@@ -171,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
         const trackWidth = track.getBoundingClientRect().width / 2;
         track.style.setProperty("--track-width", `${trackWidth}px`);
-        
+
         // アニメーションを開始
         track.classList.add("animated");
       });

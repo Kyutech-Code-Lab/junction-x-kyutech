@@ -25,6 +25,44 @@ body {
   min-height: 100vh; /* 高さを確実に設定 */
 }
 
+/* 言語切り替えボタンのスタイル */
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 5px;
+}
+
+.lang-btn {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 10px;
+    right: 10px;
+  }
+}
+
 /* コンテナスタイル */
 .container {
   max-width: 1200px;

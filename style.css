@@ -251,8 +251,7 @@ footer {
 /* パートナーセクション */
 .partners-section {
   width: 100vw;
-  margin: 4rem 0;
-  padding: 2rem 0;
+  margin: 6rem 0;
 }
 
 .partners-title {
@@ -535,7 +534,7 @@ footer {
 .supporting-university-section {
   width: 100%;
   max-width: 64rem;
-  margin: 4rem auto 3rem;
+  margin: 6rem 0;
   text-align: center;
 }
 
@@ -583,6 +582,56 @@ footer {
   }
 
   .university-logo {
+    max-width: 150px;
+  }
+}
+
+/* Supporting Organization セクション */
+.supporting-organization-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.supporting-organization-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: #fbfbfb;
+  letter-spacing: 0.1em;
+}
+
+.organization-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.organization-logo {
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.organization-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .supporting-organization-title {
+    font-size: 2.25rem;
+  }
+
+  .organization-logos {
+    gap: 4rem;
+  }
+
+  .organization-logo {
     max-width: 150px;
   }
 }

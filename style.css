@@ -274,6 +274,10 @@ footer {
   display: flex;
   align-items: center;
   width: fit-content;
+  animation: none; /* 初期状態ではアニメーションを無効にする */
+}
+
+.partners-track.animated {
   animation: scroll 8s linear infinite;
 }
 
@@ -318,7 +322,7 @@ footer {
 
 /* パートナーが少数の場合の中央配置 */
 .partners-track.static {
-  animation: none;
+  animation: none !important;
   justify-content: center;
   width: 100%;
 }

@@ -163,9 +163,18 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(clone);
     });
 
-    // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
-    // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
-    const trackWidth = track.getBoundingClientRect().width / 2;
-    track.style.setProperty("--track-width", `${trackWidth}px`);
+    // 初期化完了後にアニメーションを開始
+    // requestAnimationFrameを使用して、DOMの更新が完了してからアニメーションを開始
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        // CSSでアニメーションを動かすために、トラック幅の半分をCSS変数としてセット
+        // (トラックにはオリジナルとクローンの2セット分のロゴが入っているため)
+        const trackWidth = track.getBoundingClientRect().width / 2;
+        track.style.setProperty("--track-width", `${trackWidth}px`);
+        
+        // アニメーションを開始
+        track.classList.add("animated");
+      });
+    });
   }
 });

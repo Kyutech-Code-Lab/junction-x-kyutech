@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Androidブラウザ向けの追加設定 -->
     <meta name="format-detection" content="telephone=no" />
     <meta name="mobile-web-app-capable" content="yes" />
-    
+
     <title>
       JunctionX Kyutech | Hackathon 2025 at Kyushu Institute of Technology
     </title>
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- ファビコン -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body>
     <!-- 言語切り替えボタン -->
@@ -47,9 +47,11 @@
 
         <!-- Junctionについて -->
         <div class="about-junction fade-in-up delay-1">
-          <p class="about-text" 
-              data-en="Junction is a global hackathon and tech community, spreading the word of empowering people to create with technology. <br />The JunctionX program was created for local tech communities around the world to have a way to create their own hackathon, and bring developers, designers and all other techies together. <br />All JunctionX events are individual events created by the local community, supported by Junction."
-              data-ja="Junctionは、テクノロジーを駆使して創造する力を広める、グローバルなハッカソンおよびテックコミュニティです。<br />JunctionXは、世界各地のテックコミュニティが独自のハッカソンを開催し、開発者やデザイナーをはじめとする技術者が集う場を提供するために作られました。<br />すべてのJunctionXイベントは、各地のコミュニティが主体となり、Junctionがサポートする形で個別に開催されています。">
+          <p
+            class="about-text"
+            data-en="Junction is a global hackathon and tech community, spreading the word of empowering people to create with technology. <br />The JunctionX program was created for local tech communities around the world to have a way to create their own hackathon, and bring developers, designers and all other techies together. <br />All JunctionX events are individual events created by the local community, supported by Junction."
+            data-ja="Junctionは、テクノロジーを駆使して創造する力を広める、グローバルなハッカソンおよびテックコミュニティです。<br />JunctionXは、世界各地のテックコミュニティが独自のハッカソンを開催し、開発者やデザイナーをはじめとする技術者が集う場を提供するために作られました。<br />すべてのJunctionXイベントは、各地のコミュニティが主体となり、Junctionがサポートする形で個別に開催されています。"
+          >
             Junction is a global hackathon and tech community, spreading the
             word of empowering people to create with technology. The JunctionX
             program was created for local tech communities around the world to
@@ -59,235 +61,289 @@
             Junction.
           </p>
         </div>
+
+        <!-- イベント詳細 -->
+        <div class="event-details fade-in-up delay-2">
+          <div class="event-info">
+            <div class="info-item">
+              <p class="info-label" data-en="DATE" data-ja="開催日">DATE</p>
+              <p
+                class="info-value"
+                data-en="September<br />26th - 28th, 2025"
+                data-ja="2025年9月 26日 ~ 28日"
+              >
+                September<br />26th - 28th, 2025
+              </p>
+            </div>
+            <div class="info-item">
+              <p class="info-label" data-en="VENUE" data-ja="会場">VENUE</p>
+              <p
+                class="info-value"
+                data-en="GYMLABO, <br />located within Kyushu Institute of Technology (Kyutech) <br />Kitakyushu City, Fukuoka, Japan"
+                data-ja="GYMLABO<br /> 福岡県北九州市 九州工業大学内"
+              >
+                GYMLABO, <br />
+                located within Kyushu Institute of Technology (Kyutech) <br />
+                Kitakyushu City, Fukuoka, Japan
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- タイムテーブル -->
+        <section class="schedule-section fade-in-up delay-3">
+          <h2>SCHEDULE</h2>
+          <div class="schedule-grid">
+            <!-- Day 1 -->
+            <div class="day-schedule">
+              <h3>9.26 FRI</h3>
+              <ul>
+                <li>
+                  <time>16:30-17:00</time>
+                  <span data-en="Registration" data-ja="受付"
+                    >Registration</span
+                  >
+                </li>
+                <li>
+                  <time>17:00-18:00</time>
+                  <span data-en="Opening Ceremony" data-ja="開会式"
+                    >Opening Ceremony</span
+                  >
+                </li>
+                <li>
+                  <time>18:30-20:00</time>
+                  <span
+                    data-en="Casual evening meal & networking"
+                    data-ja="軽食・懇親会"
+                    >Casual evening meal & networking</span
+                  >
+                </li>
+                <li>
+                  <time>20:00</time>
+                  <span data-en="Hacking Begins" data-ja="ハッキング開始"
+                    >Hacking Begins</span
+                  >
+                </li>
+                <li>
+                  <time>23:59</time>
+                  <span data-en="Draft/Pre-submission" data-ja="ドラフト提出"
+                    >Draft/Pre-submission</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Day 2 -->
+            <div class="day-schedule">
+              <h3>9.27 SAT</h3>
+              <ul>
+                <li>
+                  <time>9:00</time>
+                  <span data-en="Breakfast" data-ja="朝食">Breakfast</span>
+                </li>
+                <li>
+                  <time></time>
+                  <span data-en="Hacking" data-ja="ハッキング">Hacking</span>
+                </li>
+                <li>
+                  <time></time>
+                  <span data-en="Workshop" data-ja="ワークショップ"
+                    >Workshop</span
+                  >
+                </li>
+                <li>
+                  <time>12:00</time>
+                  <span data-en="Lunch" data-ja="昼食">Lunch</span>
+                </li>
+                <li>
+                  <time>19:00-20:00</time>
+                  <span data-en="Evening meal" data-ja="夕食"
+                    >Evening meal</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Day 3 -->
+            <div class="day-schedule">
+              <h3>9.28 SUN</h3>
+              <ul>
+                <li>
+                  <time>9:00</time>
+                  <span data-en="Breakfast" data-ja="朝食">Breakfast</span>
+                </li>
+                <li>
+                  <time></time>
+                  <span data-en="Hacking" data-ja="ハッキング">Hacking</span>
+                </li>
+                <li>
+                  <time>12:00</time>
+                  <span data-en="Lunch" data-ja="昼食">Lunch</span>
+                </li>
+                <li>
+                  <time>13:00</time>
+                  <span data-en="Submission deadline" data-ja="提出締切"
+                    >Submission deadline</span
+                  >
+                </li>
+                <li>
+                  <time>14:00-16:30</time>
+                  <span
+                    data-en="Presentations & Demos"
+                    data-ja="プレゼンテーション・デモ"
+                    >Presentations & Demos</span
+                  >
+                </li>
+                <li>
+                  <time>16:30-17:00</time>
+                  <span data-en="Judging and Deliberation" data-ja="審査"
+                    >Judging and Deliberation</span
+                  >
+                </li>
+                <li>
+                  <time>17:00-17:30</time>
+                  <span
+                    data-en="Award Ceremony & Closing Remarks"
+                    data-ja="表彰式・閉会式"
+                    >Award Ceremony & Closing Remarks</span
+                  >
+                </li>
+                <li>
+                  <time>18:00-19:30</time>
+                  <span data-en="Networking Dinner" data-ja="交流ディナー"
+                    >Networking Dinner</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 賞金セクション -->
+        <section class="prizes-section fade-in-up delay-3">
+          <h2>PRIZES</h2>
+          <div class="prizes-grid">
+            <div class="prize-item grand-prize">
+              <h3 class="prize-title" data-en="Grand Prize" data-ja="最優秀賞">
+                Grand Prize
+              </h3>
+              <p
+                class="prize-amount"
+                data-en="200,000 JPY + Golden Ticket"
+                data-ja="200,000円 + ゴールデンチケット"
+              >
+                200,000 JPY + Golden Ticket
+              </p>
+            </div>
+            <div class="prize-item second-prize">
+              <h3 class="prize-title" data-en="Second Prize" data-ja="第2位">
+                Second Prize
+              </h3>
+              <p class="prize-amount" data-en="50,000 JPY" data-ja="50,000円">
+                50,000 JPY
+              </p>
+            </div>
+            <div class="prize-item third-prize">
+              <h3 class="prize-title" data-en="Third Prize" data-ja="第3位">
+                Third Prize
+              </h3>
+              <p class="prize-amount" data-en="30,000 JPY" data-ja="30,000円">
+                30,000 JPY
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 申し込みボタンとSNSリンク -->
+        <div class="entry-section fade-in-up delay-4">
+          <a
+            href="#"
+            class="entry-button"
+            data-en="Register Now"
+            data-ja="今すぐ申し込み"
+            >Register Now</a
+          >
+          <p
+            class="sns-info"
+            data-en="Check our SNS for the latest information."
+            data-ja="最新情報はSNSをチェック"
+          >
+            Check our SNS for the latest information.
+          </p>
+          <div class="sns-links">
+            <a
+              href="https://x.com/junctionx_9tech"
+              aria-label="X (formerly Twitter) Link"
+              target="_blank"
+              class="x-logo"
+            >
+              <img src="images/sns/x-logo.svg" alt="X Logo" />
+            </a>
+            <a
+              href="https://www.instagram.com/junctionx_9tech"
+              aria-label="Instagram Link"
+              target="_blank"
+              class="instagram-logo"
+            >
+              <img src="images/sns/instagram-logo.svg" alt="Instagram Logo" />
+            </a>
+          </div>
+        </div>
+
+        <!-- FAQ セクション -->
+        <div class="faq-section fade-in-up delay-4">
+          <h2 class="faq-title">FAQ</h2>
+          <!-- FAQアイテムはfaq.jsで動的に生成されます -->
+        </div>
+
+        <!-- パートナーセクション -->
+        <div
+          class="partners-section fade-in-up delay-3"
+          id="partners-section"
+          style="display: none"
+        >
+          <h2 class="partners-title">PARTNERS</h2>
+          <div class="partners-slider" id="partners-slider">
+            <div class="partners-track" id="partners-track">
+              <!-- パートナーロゴは JavaScript で動的に生成されます -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Supporting University セクション -->
+        <div class="supporting-university-section fade-in-up delay-4">
+          <h2 class="supporting-university-title">SUPPORTING UNIVERSITY</h2>
+          <div class="university-logos">
+            <div class="university-logo apu">
+              <img
+                src="images/university/apu.png"
+                alt="Ritsumeikan Asia Pacific University"
+              />
+            </div>
+            <div class="university-logo kit">
+              <img
+                src="images/university/kit.png"
+                alt="Kyushu Institute of Technology"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Supporting Organization セクション -->
+        <div class="supporting-organization-section fade-in-up delay-4">
+          <h2 class="supporting-organization-title">SUPPORTING ORGANIZATION</h2>
+          <div class="organization-logos">
+            <div class="organization-logo kcl">
+              <img src="images/organization/kcl.png" alt="Kyutech Code Lab" />
+            </div>
+            <div class="organization-logo space-launch">
+              <img
+                src="images/organization/space-launch.jpg"
+                alt="Space Launch"
+              />
+            </div>
+          </div>
+        </div>
       </main>
 
-      <!-- イベント詳細 -->
-      <div class="event-details fade-in-up delay-2">
-        <div class="event-info">
-          <div class="info-item">
-            <p class="info-label" 
-                data-en="DATE" 
-                data-ja="開催日">DATE</p>
-            <p class="info-value" 
-                data-en="September<br />26th - 28th, 2025" 
-                data-ja="2025年9月 26日 ~ 28日">September<br />26th - 28th, 2025</p>
-          </div>
-          <div class="info-item">
-            <p class="info-label" 
-                data-en="VENUE" 
-                data-ja="会場">VENUE</p>
-            <p class="info-value"
-                data-en="GYMLABO, <br />located within Kyushu Institute of Technology (Kyutech) <br />Kitakyushu City, Fukuoka, Japan"
-                data-ja="GYMLABO<br /> 福岡県北九州市 九州工業大学内">
-              GYMLABO, <br />
-              located within Kyushu Institute of Technology (Kyutech) <br />
-              Kitakyushu City, Fukuoka, Japan
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- タイムテーブル -->
-      <section class="schedule-section fade-in-up delay-3">
-        <h2>SCHEDULE</h2>
-        <div class="schedule-grid">
-          <!-- Day 1 -->
-          <div class="day-schedule">
-            <h3>9.26 FRI</h3>
-            <ul>
-              <li>
-                <time>16:30-17:00</time>
-                <span data-en="Registration" data-ja="受付">Registration</span>
-              </li>
-              <li>
-                <time>17:00-18:00</time>
-                <span data-en="Opening Ceremony" data-ja="開会式">Opening Ceremony</span>
-              </li>
-              <li>
-                <time>18:30-20:00</time>
-                <span data-en="Casual evening meal & networking" data-ja="軽食・懇親会">Casual evening meal & networking</span>
-              </li>
-              <li>
-                <time>20:00</time>
-                <span data-en="Hacking Begins" data-ja="ハッキング開始">Hacking Begins</span>
-              </li>
-              <li>
-                <time>23:59</time>
-                <span data-en="Draft/Pre-submission" data-ja="ドラフト提出">Draft/Pre-submission</span>
-              </li>
-            </ul>
-          </div>
-          <!-- Day 2 -->
-          <div class="day-schedule">
-            <h3>9.27 SAT</h3>
-            <ul>
-              <li>
-                <time>9:00</time>
-                <span data-en="Breakfast" data-ja="朝食">Breakfast</span>
-              </li>
-              <li>
-                <time></time>
-                <span data-en="Hacking" data-ja="ハッキング">Hacking</span>
-              </li>
-              <li>
-                <time></time>
-                <span data-en="Workshop" data-ja="ワークショップ">Workshop</span>
-              </li>
-              <li>
-                <time>12:00</time>
-                <span data-en="Lunch" data-ja="昼食">Lunch</span>
-              </li>
-              <li>
-                <time>19:00-20:00</time>
-                <span data-en="Evening meal" data-ja="夕食">Evening meal</span>
-              </li>
-            </ul>
-          </div>
-          <!-- Day 3 -->
-          <div class="day-schedule">
-            <h3>9.28 SUN</h3>
-            <ul>
-              <li>
-                <time>9:00</time>
-                <span data-en="Breakfast" data-ja="朝食">Breakfast</span>
-              </li>
-              <li>
-                <time></time>
-                <span data-en="Hacking" data-ja="ハッキング">Hacking</span>
-              </li>
-              <li>
-                <time>12:00</time>
-                <span data-en="Lunch" data-ja="昼食">Lunch</span>
-              </li>
-              <li>
-                <time>13:00</time>
-                <span data-en="Submission deadline" data-ja="提出締切">Submission deadline</span>
-              </li>
-              <li>
-                <time>14:00-16:30</time>
-                <span data-en="Presentations & Demos" data-ja="プレゼンテーション・デモ">Presentations & Demos</span>
-              </li>
-              <li>
-                <time>16:30-17:00</time>
-                <span data-en="Judging and Deliberation" data-ja="審査">Judging and Deliberation</span>
-              </li>
-              <li>
-                <time>17:00-17:30</time>
-                <span data-en="Award Ceremony & Closing Remarks" data-ja="表彰式・閉会式">Award Ceremony & Closing Remarks</span>
-              </li>
-              <li>
-                <time>18:00-19:30</time>
-                <span data-en="Networking Dinner" data-ja="交流ディナー">Networking Dinner</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- 賞金セクション -->
-      <section class="prizes-section fade-in-up delay-3">
-        <h2>PRIZES</h2>
-        <div class="prizes-grid">
-          <div class="prize-item grand-prize">
-            <h3 class="prize-title" 
-                data-en="Grand Prize" 
-                data-ja="最優秀賞">Grand Prize</h3>
-            <p class="prize-amount" 
-                data-en="200,000 JPY + Golden Ticket" 
-                data-ja="200,000円 + ゴールデンチケット">200,000 JPY + Golden Ticket</p>
-          </div>
-          <div class="prize-item second-prize">
-            <h3 class="prize-title" 
-                data-en="Second Prize" 
-                data-ja="第2位">Second Prize</h3>
-            <p class="prize-amount" 
-                data-en="50,000 JPY" 
-                data-ja="50,000円">50,000 JPY</p>
-          </div>
-          <div class="prize-item third-prize">
-            <h3 class="prize-title" 
-                data-en="Third Prize" 
-                data-ja="第3位">Third Prize</h3>
-            <p class="prize-amount" 
-                data-en="30,000 JPY" 
-                data-ja="30,000円">30,000 JPY</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 申し込みボタンとSNSリンク -->
-      <div class="entry-section fade-in-up delay-4">
-        <a href="#" class="entry-button" 
-            data-en="Register Now" 
-            data-ja="今すぐ申し込み">Register Now</a>
-        <p class="sns-info" 
-              data-en="Check our SNS for the latest information." 
-              data-ja="最新情報はSNSをチェック">Check our SNS for the latest information.</p>
-        <div class="sns-links">
-          <a
-            href="https://x.com/junctionx_9tech"
-            aria-label="X (formerly Twitter) Link"
-            target="_blank"
-            class="x-logo"
-          >
-            <img src="images/sns/x-logo.svg" alt="X Logo" />
-          </a>
-          <a
-            href="https://www.instagram.com/junctionx_9tech"
-            aria-label="Instagram Link"
-            target="_blank"
-            class="instagram-logo"
-          >
-            <img src="images/sns/instagram-logo.svg" alt="Instagram Logo" />
-          </a>
-        </div>
-      </div>
-
-      <!-- FAQ セクション -->
-      <div class="faq-section fade-in-up delay-4">
-        <h2 class="faq-title">FAQ</h2>
-        <!-- FAQアイテムはfaq.jsで動的に生成されます -->
-      </div>        <!-- パートナーセクション -->
-        <div
-        class="partners-section fade-in-up delay-3"
-        id="partners-section"
-        style="display: none"
-        >
-        <h2 class="partners-title">PARTNERS</h2>
-        <div class="partners-slider" id="partners-slider">
-          <div class="partners-track" id="partners-track">
-            <!-- パートナーロゴは JavaScript で動的に生成されます -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Supporting University セクション -->
-      <div class="supporting-university-section fade-in-up delay-4">
-        <h2 class="supporting-university-title">SUPPORTING UNIVERSITY</h2>
-        <div class="university-logos">
-          <div class="university-logo apu">
-            <img src="images/university/apu.png" alt="Ritsumeikan Asia Pacific University" />
-          </div>
-          <div class="university-logo kit">
-            <img src="images/university/kit.png" alt="Kyushu Institute of Technology" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Supporting Organization セクション -->
-      <div class="supporting-organization-section fade-in-up delay-4">
-        <h2 class="supporting-organization-title">SUPPORTING ORGANIZATION</h2>
-        <div class="organization-logos">
-          <div class="organization-logo kcl">
-            <img src="images/organization/kcl.png" alt="Kyutech Code Lab" />
-          </div>
-          <div class="organization-logo space-launch">
-            <img src="images/organization/space-launch.jpg" alt="Space Launch" />
-          </div>
-        </div>
-      </div>
-    </main>
-    
       <!-- フッター -->
       <footer class="fade-in-up delay-5">
         <p class="footer-text">&copy; 2025 JunctionX Kyutech.</p>

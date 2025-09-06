@@ -289,15 +289,7 @@ footer {
 /* パートナーセクション */
 .partners-section {
   width: 100vw;
-  margin: 6rem 0;
-}
-
-.partners-title {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: #fbfbfb;
-  letter-spacing: 0.1em;
+  margin: 0;
 }
 
 .partners-slider {
@@ -393,16 +385,8 @@ footer {
 .faq-section {
   width: 100%;
   max-width: 800px;
-  margin: 3rem 0;
+  margin: 0 auto;
   text-align: left;
-}
-
-.faq-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: rgba(251, 251, 251, 0.9);
 }
 
 .faq-item {
@@ -472,13 +456,27 @@ footer {
 
 /* タイムテーブル（SCHEDULE）セクション */
 .schedule-section {
-  width: 100%;
-  max-width: 64rem;
-  margin: 3rem auto;
-  text-align: left;
+  text-align: left; /* スケジュールセクションのみ左寄せ */
 }
 
-.schedule-section h2 {
+.schedule-section * {
+  text-align: left; /* スケジュールセクション内の全要素を左寄せ */
+}
+
+.schedule-section .section-title {
+  text-align: center; /* タイトルのみ中央寄せを維持 */
+}
+
+/* 共通セクションスタイル */
+.content-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+/* 共通見出しスタイル */
+.section-title {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 3rem;
@@ -534,11 +532,11 @@ footer {
 
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
-  .schedule-section {
-    margin: 4rem auto;
+  .content-section {
+    margin: 5rem auto;
   }
 
-  .schedule-section h2 {
+  .section-title {
     font-size: 2.25rem;
   }
 
@@ -555,10 +553,6 @@ footer {
     font-size: 1.5rem;
   }
 
-  .faq-title {
-    font-size: 1.8rem;
-  }
-
   .faq-question {
     font-size: 1.1rem;
   }
@@ -570,9 +564,6 @@ footer {
 
 /* 審査員（JUDGES）セクション */
 .judges-section {
-  width: 100%;
-  max-width: 64rem;
-  margin: 3rem auto;
   text-align: center;
 }
 
@@ -617,9 +608,6 @@ footer {
 
 /* 賞金（PRIZES）セクション */
 .prizes-section {
-  width: 100%;
-  max-width: 64rem;
-  margin: 3rem auto;
   text-align: center;
 }
 
@@ -718,10 +706,6 @@ footer {
 
 /* レスポンシブデザイン（賞金セクション用） */
 @media (min-width: 768px) {
-  .judges-section {
-    margin: 4rem auto;
-  }
-
   .judges-section h2 {
     font-size: 2.25rem;
   }
@@ -743,10 +727,6 @@ footer {
 
   .judge-title {
     font-size: 1.1rem;
-  }
-
-  .prizes-section {
-    margin: 4rem auto;
   }
 
   .prizes-section h2 {
@@ -774,9 +754,6 @@ footer {
 
 /* Supporting University セクション */
 .supporting-university-section {
-  width: 100%;
-  max-width: 64rem;
-  margin: 6rem 0;
   text-align: center;
 }
 
@@ -830,9 +807,6 @@ footer {
 
 /* Supporting Organization セクション */
 .supporting-organization-section {
-  width: 100%;
-  max-width: 64rem;
-  margin: 6rem 0;
   text-align: center;
 }
 

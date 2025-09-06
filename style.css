@@ -163,19 +163,30 @@ main {
   background-color: #ffffff;
   color: #000000;
   font-weight: 700;
-  font-size: 1.25rem;
-  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  padding: 1.25rem 3.5rem;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s ease;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
 }
 
 .entry-button:hover {
-  background-color: #d1d3d8;
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* モバイル表示での調整 */
+@media (max-width: 768px) {
+  .entry-button {
+    font-size: 1.3rem;
+    padding: 1.1rem 2.5rem;
+  }
 }
 
 /* SNSリンクセクション */
@@ -377,10 +388,6 @@ footer {
   mask-image: none;
 }
 
-.delay-5 {
-  animation-delay: 1s;
-}
-
 /* FAQ セクション */
 .faq-section {
   width: 100%;
@@ -553,6 +560,11 @@ footer {
     font-size: 1.5rem;
   }
 
+  .entry-button {
+    font-size: 1.6rem;
+    padding: 1.4rem 4rem;
+  }
+
   .faq-question {
     font-size: 1.1rem;
   }
@@ -565,14 +577,6 @@ footer {
 /* 審査員（JUDGES）セクション */
 .judges-section {
   text-align: center;
-}
-
-.judges-section h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: #fbfbfb;
-  letter-spacing: 0.1em;
 }
 
 .judges-grid {
@@ -609,14 +613,6 @@ footer {
 /* 賞金（PRIZES）セクション */
 .prizes-section {
   text-align: center;
-}
-
-.prizes-section h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: #fbfbfb;
-  letter-spacing: 0.1em;
 }
 
 .prizes-grid {
@@ -706,10 +702,6 @@ footer {
 
 /* レスポンシブデザイン（賞金セクション用） */
 @media (min-width: 768px) {
-  .judges-section h2 {
-    font-size: 2.25rem;
-  }
-
   .judges-grid {
     flex-direction: row;
     justify-content: center;
@@ -727,10 +719,6 @@ footer {
 
   .judge-title {
     font-size: 1.1rem;
-  }
-
-  .prizes-section h2 {
-    font-size: 2.25rem;
   }
 
   .prizes-grid {
@@ -755,14 +743,6 @@ footer {
 /* Supporting University セクション */
 .supporting-university-section {
   text-align: center;
-}
-
-.supporting-university-title {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: #fbfbfb;
-  letter-spacing: 0.1em;
 }
 
 .university-logos {
@@ -792,10 +772,6 @@ footer {
 
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
-  .supporting-university-title {
-    font-size: 2.25rem;
-  }
-
   .university-logos {
     gap: 4rem;
   }
@@ -808,14 +784,6 @@ footer {
 /* Supporting Organization セクション */
 .supporting-organization-section {
   text-align: center;
-}
-
-.supporting-organization-title {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: #fbfbfb;
-  letter-spacing: 0.1em;
 }
 
 .organization-logos {
@@ -839,10 +807,6 @@ footer {
 
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
-  .supporting-organization-title {
-    font-size: 2.25rem;
-  }
-
   .organization-logos {
     gap: 4rem;
   }

@@ -153,6 +153,26 @@ main {
   font-size: 1.25rem;
 }
 
+/* Junction Platform リンク */
+.junction-platform-link {
+  margin: 2rem 0;
+}
+
+.platform-link {
+  color: #9ca3af;
+  text-decoration: underline;
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.platform-link:hover {
+  color: #d1d5db;
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* エントリーセクション */
 .entry-section {
   width: 100%;

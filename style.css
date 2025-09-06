@@ -568,6 +568,53 @@ footer {
   }
 }
 
+/* 審査員（JUDGES）セクション */
+.judges-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.judges-section h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: #fbfbfb;
+  letter-spacing: 0.1em;
+}
+
+.judges-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.judge-item {
+  text-align: center;
+}
+
+.judge-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.judge-title {
+  font-size: 1rem;
+  color: rgba(251, 251, 251, 0.7);
+  line-height: 1.5;
+}
+
+.judges-note {
+  font-size: 0.875rem;
+  color: rgba(251, 251, 251, 0.5);
+  font-style: italic;
+  text-align: center;
+}
+
 /* 賞金（PRIZES）セクション */
 .prizes-section {
   width: 100%;
@@ -671,6 +718,33 @@ footer {
 
 /* レスポンシブデザイン（賞金セクション用） */
 @media (min-width: 768px) {
+  .judges-section {
+    margin: 4rem auto;
+  }
+
+  .judges-section h2 {
+    font-size: 2.25rem;
+  }
+
+  .judges-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .judge-item {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .judge-name {
+    font-size: 1.5rem;
+  }
+
+  .judge-title {
+    font-size: 1.1rem;
+  }
+
   .prizes-section {
     margin: 4rem auto;
   }

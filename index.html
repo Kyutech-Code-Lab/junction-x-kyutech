@@ -37,7 +37,7 @@
       <main>
         <!-- メインタイトルとキャッチコピー -->
         <div class="fade-in-up delay-1">
-          <h1 class="main-title">Junction X Kyutech</h1>
+          <h1 class="main-title">JunctionX Kyutech</h1>
           <img
             src="images/junction-x-logo-circle.png"
             alt="Junction X Logo"
@@ -83,7 +83,7 @@
               <p
                 class="info-value"
                 data-en="September<br />26th - 28th, 2025"
-                data-ja="2025年9月 26日 ~ 28日"
+                data-ja="2025年9月26日〜28日"
               >
                 September<br />26th - 28th, 2025
               </p>
@@ -93,7 +93,7 @@
               <p
                 class="info-value"
                 data-en="GYMLABO, <br />located within Kyushu Institute of Technology (Kyutech) <br />Kitakyushu City, Fukuoka, Japan"
-                data-ja="GYMLABO<br /> 福岡県北九州市 九州工業大学内"
+                data-ja="GYMLABO<br />九州工業大学内<br />福岡県北九州市"
               >
                 GYMLABO, <br />
                 located within Kyushu Institute of Technology (Kyutech) <br />
@@ -104,8 +104,8 @@
         </div>
 
         <!-- タイムテーブル -->
-        <section class="schedule-section fade-in-up delay-3">
-          <h2>SCHEDULE</h2>
+        <section class="content-section schedule-section fade-in-up delay-3">
+          <h2 class="section-title">SCHEDULE</h2>
           <div class="schedule-grid">
             <!-- Day 1 -->
             <div class="day-schedule">
@@ -230,9 +230,56 @@
           </div>
         </section>
 
+        <!-- 審査員セクション -->
+        <section class="content-section judges-section fade-in-up delay-3">
+          <h2 class="section-title">MEET THE JUDGES</h2>
+          <div class="judges-grid">
+            <div class="judge-item">
+              <h3
+                class="judge-name"
+                data-en="Mr. Hiroaki Miyoshi"
+                data-ja="三好 弘晃氏"
+              >
+                Mr. Hiroaki Miyoshi
+              </h3>
+              <p
+                class="judge-title"
+                data-en="Fellow of Aerospace Domain, NEC Corporation"
+                data-ja="NEC Fellow（航空宇宙領域）"
+              >
+                Fellow of Aerospace Domain, NEC Corporation
+              </p>
+            </div>
+            <div class="judge-item">
+              <h3
+                class="judge-name"
+                data-en="Mr. Shin Onitsuka"
+                data-ja="鬼塚 慎一郎氏"
+              >
+                Mr. Shin Onitsuka
+              </h3>
+              <p
+                class="judge-title"
+                data-en="General Manager, Space Business Dept., All Nippon Airways Trading Co., Ltd."
+                data-ja="全日空商事株式会社<br />宇宙ビジネス開発室  室長"
+              >
+                General Manager, Space Business Dept., All Nippon Airways
+                Trading Co., Ltd.
+              </p>
+            </div>
+          </div>
+          <p
+            class="judges-note"
+            data-en="More distinguished judges will be announced soon"
+            data-ja="追加の審査員は順次発表予定です"
+          >
+            More distinguished judges will be announced soon
+          </p>
+        </section>
+
         <!-- 賞金セクション -->
-        <section class="prizes-section fade-in-up delay-3">
-          <h2>PRIZES</h2>
+        <section class="content-section prizes-section fade-in-up delay-3">
+          <h2 class="section-title">PRIZES</h2>
           <div class="prizes-grid">
             <div class="prize-item grand-prize">
               <h3 class="prize-title" data-en="Grand Prize" data-ja="最優秀賞">
@@ -271,13 +318,13 @@
             href="#"
             class="entry-button"
             data-en="Register Now"
-            data-ja="今すぐ申し込み"
+            data-ja="エントリーはこちら"
             >Register Now</a
           >
           <p
             class="sns-info"
             data-en="Check our SNS for the latest information."
-            data-ja="最新情報はSNSをチェック"
+            data-ja="最新情報はSNSでチェック"
           >
             Check our SNS for the latest information.
           </p>
@@ -302,28 +349,30 @@
         </div>
 
         <!-- FAQ セクション -->
-        <div class="faq-section fade-in-up delay-4">
-          <h2 class="faq-title">FAQ</h2>
+        <section class="content-section faq-section fade-in-up delay-4">
+          <h2 class="section-title">FAQ</h2>
           <!-- FAQアイテムはfaq.jsで動的に生成されます -->
-        </div>
+        </section>
 
         <!-- パートナーセクション -->
-        <div
-          class="partners-section fade-in-up delay-3"
+        <section
+          class="content-section partners-section fade-in-up delay-3"
           id="partners-section"
           style="display: none"
         >
-          <h2 class="partners-title">PARTNERS</h2>
+          <h2 class="section-title">PARTNERS</h2>
           <div class="partners-slider" id="partners-slider">
             <div class="partners-track" id="partners-track">
               <!-- パートナーロゴは JavaScript で動的に生成されます -->
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Supporting University セクション -->
-        <div class="supporting-university-section fade-in-up delay-4">
-          <h2 class="supporting-university-title">SUPPORTING UNIVERSITY</h2>
+        <section
+          class="content-section supporting-university-section fade-in-up delay-4"
+        >
+          <h2 class="section-title">SUPPORTING UNIVERSITY</h2>
           <div class="university-logos">
             <div class="university-logo apu">
               <img
@@ -338,11 +387,13 @@
               />
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Supporting Organization セクション -->
-        <div class="supporting-organization-section fade-in-up delay-4">
-          <h2 class="supporting-organization-title">SUPPORTING ORGANIZATION</h2>
+        <section
+          class="content-section supporting-organization-section fade-in-up delay-4"
+        >
+          <h2 class="section-title">SUPPORTING ORGANIZATION</h2>
           <div class="organization-logos">
             <div class="organization-logo kcl">
               <img src="images/organization/kcl.png" alt="Kyutech Code Lab" />
@@ -354,7 +405,7 @@
               />
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <!-- フッター -->

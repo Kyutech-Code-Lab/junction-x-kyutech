@@ -851,3 +851,50 @@ footer {
     max-width: 150px;
   }
 }
+
+/* Track Themes セクション */
+.track-themes-section {
+  text-align: center;
+}
+
+.track-themes-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.track-themes-list {
+  margin-bottom: 1.5rem;
+}
+
+.track-highlight {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.track-highlight:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.track-themes-note {
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-style: italic;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .track-highlight {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}

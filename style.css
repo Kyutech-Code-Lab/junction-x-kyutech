@@ -878,6 +878,10 @@ footer {
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
+
+  span {
+    font-weight: 500;
+  }
 }
 
 .track-highlight:hover {
@@ -892,9 +896,37 @@ footer {
 }
 
 /* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .track-highlight {
+    br {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .track-highlight {
     font-size: 1.3rem;
-    padding: 0.8rem;
+    padding: 1.5rem 1rem;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .track-highlight {
+    font-size: 1.1rem;
+    padding: 1rem 0.8rem;
+    line-height: 2rem;
+
+    span {
+      display: none;
+    }
+
+    br {
+      display: block;
+    }
   }
 }

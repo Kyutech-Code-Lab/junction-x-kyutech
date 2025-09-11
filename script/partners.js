@@ -26,6 +26,11 @@ const partnersData = [
     name: "KYOCERA",
     logo: "images/partners-logo/kyocera.png",
   },
+  {
+    name: "NS Solutions",
+    logo: "images/partners-logo/ns-solutions.png",
+    whiteBg: true,
+  }
 ];
 
 // パートナーデータを取得する関数

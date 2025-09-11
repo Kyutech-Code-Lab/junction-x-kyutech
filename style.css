@@ -478,6 +478,7 @@ footer {
   overflow: hidden;
   transition: max-height 0.3s ease;
   background-color: rgba(251, 251, 251, 0.02);
+  text-align: left;
 
   a {
     color: #ffffff;
@@ -495,6 +496,7 @@ footer {
   font-size: 0.9rem;
   line-height: 1.5;
   color: rgba(251, 251, 251, 0.7);
+  text-align: left;
 }
 
 /* タイムテーブル（SCHEDULE）セクション */

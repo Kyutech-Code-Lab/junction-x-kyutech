@@ -30,7 +30,12 @@ const partnersData = [
     name: "NS Solutions",
     logo: "images/partners-logo/ns-solutions.png",
     whiteBg: true,
-  }
+  },
+  {
+    name: "muRata INNOVATOR IN ELECTRONICS",
+    logo: "images/partners-logo/murata.png",
+    whiteBg: true,
+  },
 ];
 
 // パートナーデータを取得する関数

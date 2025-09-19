@@ -30,7 +30,12 @@ const partnersData = [
     name: "NS Solutions",
     logo: "images/partners-logo/ns-solutions.png",
     whiteBg: true,
-  }
+  },
+  {
+    name: "NEC",
+    logo: "images/partners-logo/nec.png",
+    whiteBg: true,
+  },
 ];
 
 // パートナーデータを取得する関数

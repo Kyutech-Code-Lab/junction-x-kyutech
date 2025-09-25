@@ -897,6 +897,20 @@ footer {
   font-style: italic;
 }
 
+/* Supporter セクション */
+.supported-by-section {
+  .supported-by-logos {
+    .supported-by-logo {
+      img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
   .track-highlight {

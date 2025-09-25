@@ -900,7 +900,7 @@ footer {
 /* Supporter セクション */
 .supported-by-logos,
 .kcv {
-  width: 250px;
+  width: 250px !important;
   height: auto;
   margin: 0 auto;
 }

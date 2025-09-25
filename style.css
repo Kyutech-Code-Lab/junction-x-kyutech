@@ -901,8 +901,8 @@ footer {
 .supported-by-section {
   .supported-by-logos {
     .supported-by-logo {
-      img {
-        max-width: 200px;
+      .kcv {
+        width: 250px;
         height: auto;
         display: block;
         margin: 0 auto;

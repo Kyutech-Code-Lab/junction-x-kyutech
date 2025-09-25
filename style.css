@@ -898,17 +898,11 @@ footer {
 }
 
 /* Supporter セクション */
-.supported-by-section {
-  .supported-by-logos {
-    .supported-by-logo {
-      .kcv {
-        width: 250px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
+.supported-by-logos,
+.kcv {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* レスポンシブデザイン */

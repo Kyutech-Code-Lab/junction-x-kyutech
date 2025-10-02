@@ -95,14 +95,41 @@ main {
 
 /* メインタイトル */
 .main-title {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+
+  .main-visual-pc {
+    width: 120%;
+    /* max-width: 900px; */
+    height: auto;
+  }
+}
+
+.main-visual-sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    padding-top: 2rem;
+  }
+
+  .main-visual-pc {
+    display: none;
+  }
+
+  .main-visual-sp {
+    display: block;
+    width: 90%;
+  }
 }
 
 /* ロゴ画像 */
 .logo {
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 
@@ -872,17 +899,17 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  /* background: rgba(255, 255, 255, 0.05); */
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   transition: all 0.3s ease;
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* .team-member:hover {
+.team-member:hover {
   background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-5px);
+  transform: scale(1.03);
   border-color: rgba(255, 255, 255, 0.2);
-} */
+}
 
 .member-name {
   font-size: 1.25rem;
@@ -901,7 +928,6 @@ footer {
 @media (min-width: 768px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 3rem; */
   }
 
   .team-member {

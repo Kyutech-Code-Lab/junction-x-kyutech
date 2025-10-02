@@ -95,14 +95,41 @@ main {
 
 /* メインタイトル */
 .main-title {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+
+  .main-visual-pc {
+    width: 120%;
+    /* max-width: 900px; */
+    height: auto;
+  }
+}
+
+.main-visual-sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    padding-top: 2rem;
+  }
+
+  .main-visual-pc {
+    display: none;
+  }
+
+  .main-visual-sp {
+    display: block;
+    width: 90%;
+  }
 }
 
 /* ロゴ画像 */
 .logo {
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 
@@ -851,6 +878,80 @@ footer {
 
   .organization-logo {
     max-width: 150px;
+  }
+}
+
+/* Meet Our Team セクション */
+.team-section {
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  /* background: rgba(255, 255, 255, 0.05); */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.team-member:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fbfbfb;
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  font-size: 1rem;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-member {
+    height: 135px;
+    padding: 2rem 1.5rem;
+  }
+
+  .member-name {
+    font-size: 1.375rem;
+  }
+
+  .member-role {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-member {
+    padding: 1.25rem;
   }
 }
 

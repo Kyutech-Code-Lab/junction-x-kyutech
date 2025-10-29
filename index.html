@@ -84,6 +84,47 @@
           </a>
         </div>
 
+        <!-- 動画セクション -->
+        <section class="content-section video-section fade-in-up delay-2">
+          <h2 class="section-title">EVENT REPORT</h2>
+          <div class="video-container">
+            <video
+              id="eventVideo"
+              controls
+              preload="metadata"
+              poster="images/video-thumbnail.png"
+              loop
+            >
+              <source src="videos/report.mp4" type="video/mp4" />
+              <p
+                class="video-fallback"
+                data-en="Your browser does not support the video tag. Please try using a modern browser."
+                data-ja="お使いのブラウザは動画の再生に対応していません。最新のブラウザをご利用ください。"
+              >
+                Your browser does not support the video tag. Please try using a
+                modern browser.
+              </p>
+            </video>
+            <button class="video-play-button" id="videoPlayButton">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="11"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="rgba(0,0,0,0.5)"
+                />
+                <path d="M9 7.5L17 12L9 16.5V7.5Z" fill="white" />
+              </svg>
+            </button>
+          </div>
+        </section>
+
         <!-- イベント詳細 -->
         <div class="event-details fade-in-up delay-2">
           <div class="event-info">

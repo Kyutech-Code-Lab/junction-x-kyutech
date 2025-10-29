@@ -149,3 +149,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// 動画再生ボタンの制御
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("eventVideo");
+  const playButton = document.getElementById("videoPlayButton");
+
+  if (video && playButton) {
+    // 再生ボタンをクリックしたとき（再生/一時停止を切り替え）
+    playButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      if (video.paused) {
+        video.play();
+        playButton.classList.add("hidden");
+      } else {
+        video.pause();
+        playButton.classList.remove("hidden");
+      }
+    });
+
+    // 動画をクリックしたとき
+    video.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      if (video.paused) {
+        video.play();
+        playButton.classList.add("hidden");
+      } else {
+        video.pause();
+        playButton.classList.remove("hidden");
+      }
+    });
+
+    // 動画が再生されたとき
+    video.addEventListener("play", function () {
+      playButton.classList.add("hidden");
+    });
+
+    // 動画が一時停止されたとき
+    video.addEventListener("pause", function () {
+      playButton.classList.remove("hidden");
+    });
+
+    // 動画が終了したとき
+    video.addEventListener("ended", function () {
+      playButton.classList.remove("hidden");
+    });
+  }
+});

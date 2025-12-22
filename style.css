@@ -200,6 +200,23 @@ main {
   text-decoration: underline;
 }
 
+.thank-you-section {
+  margin: 3rem 0;
+
+  .thank-you-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+
+  .thank-you-text {
+    font-size: 1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+  }
+}
+
 /* エントリーセクション */
 .entry-section {
   width: 100%;

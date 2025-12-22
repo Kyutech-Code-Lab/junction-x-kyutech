@@ -36,11 +36,11 @@ const partnersData = [
     logo: "images/partners-logo/nec.png",
     whiteBg: true,
   },
-  {
-    name: "muRata INNOVATOR IN ELECTRONICS",
-    logo: "images/partners-logo/murata.png",
-    whiteBg: true,
-  },
+  // {
+  //   name: "muRata INNOVATOR IN ELECTRONICS",
+  //   logo: "images/partners-logo/murata.png",
+  //   whiteBg: true,
+  // },
 ];
 
 // パートナーデータを取得する関数

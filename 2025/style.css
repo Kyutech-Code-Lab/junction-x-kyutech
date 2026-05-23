@@ -1,12 +1,5 @@
-/* Google Fonts (Inter) を読み込みます */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
-
-/* リセットCSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* 共通スタイルは /css/common.css に移動しました。
+   このファイルではページ固有のスタイルのみを定義します。 */
 
 /* HTML要素とBody要素の背景色を明示的に設定（Androidブラウザ対応） */
 html {
@@ -14,16 +7,7 @@ html {
   background: #232323;
 }
 
-/* Interフォントを全体に適用します */
-body {
-  font-family: "Inter", "Noto Sans JP", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #232323;
-  background: #232323; /* Androidブラウザ用のフォールバック */
-  color: #fbfbfb;
-  min-height: 100vh; /* 高さを確実に設定 */
-}
+/* body の基本設定は共通 CSS で行います。ここにはページ固有の上書きのみを記載してください。 */
 
 /* 言語切り替えボタンのスタイル */
 .language-switcher {

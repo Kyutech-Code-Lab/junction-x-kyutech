@@ -1,0 +1,105 @@
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+
+  .main-visual-pc {
+    width: 120%;
+    /* max-width: 900px; */
+    height: auto;
+  }
+}
+
+.main-visual-sp {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-title {
+    padding-top: 2rem;
+  }
+
+  .main-visual-pc {
+    display: none;
+  }
+
+  .main-visual-sp {
+    display: block;
+    width: 90%;
+  }
+}
+
+/* ロゴ画像 */
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+.announcement {
+  padding: 32px 28px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+.title {
+  font-size: 2.1rem;
+  line-height: 1.05;
+  margin: 0 0 8px;
+}
+.sub {
+  font-size: 0.6em;
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.dates {
+  font-weight: 600;
+  margin: 8px 0 16px;
+}
+.intro {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+.more {
+  margin-bottom: 0;
+  font-style: italic;
+}
+.archive {
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.archive h2 {
+  margin: 0 0 6px;
+}
+.archive-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 720px) {
+  .title {
+    font-size: 2.6rem;
+  }
+}

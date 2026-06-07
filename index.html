@@ -16,29 +16,34 @@
     <script src="script/load-head.js" defer></script>
   </head>
   <body>
-    <main class="container">
-      <section class="main-title">
+    <main>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <source src="2025/videos/report.mp4" type="video/mp4" />
+        </video>
         <img
           src="images/junction-x-logo-pc.png"
           alt="JunctionX Kyutech Main Visual"
-          class="main-visual-pc"
+          class="hero-logo-pc"
         />
         <img
           src="images/junction-x-logo-sp.png"
           alt="JunctionX Kyutech Main Visual"
-          class="main-visual-sp"
-        />
-        <img
-          src="images/junction-x-logo-circle.png"
-          alt="Junction X Logo"
-          class="logo"
+          class="hero-logo-sp"
         />
       </section>
       <section class="announcement">
-        <h1 class="title">
-          JUNCTION X KYUTECH 2026<br /><span class="jx-sub"
-            >OFFICIALLY ANNOUNCED</span
-          >
+        <h1>
+          JUNCTION X KYUTECH 2026<br />
+          OFFICIALLY ANNOUNCED
         </h1>
 
         <p class="dates">
@@ -59,9 +64,7 @@
       <section class="archive">
         <h2>Looking Back at 2025</h2>
         <p>The first-ever JunctionX Kyutech was successfully held.</p>
-        <p>
-          <a class="archive-link" href="2025/index.html">View 2025 Event</a>
-        </p>
+        <a class="archive-link" href="2025/index.html">View 2025 Event</a>
       </section>
     </main>
   </body>

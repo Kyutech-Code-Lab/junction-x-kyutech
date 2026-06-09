@@ -1,0 +1,57 @@
+/* 共通スタイル: フォント読み込み、リセット、カラーパレット (日本語コメント) */
+/* Google Fonts (Inter) を読み込みます */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+/* カラーパレット: サイト全体で使用する色を変数で定義 */
+:root {
+  --color-bg: #232323;
+  --color-bg-2: #1f1f1f;
+  --color-text: #fbfbfb;
+  --color-muted: #9ca3af;
+  --color-border: #374151;
+  --primary: #ffd700;
+  --font-stack: "Inter", "Noto Sans JP", sans-serif;
+}
+
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ベースの HTML / body 設定（Android ブラウザ対応） */
+html {
+  background-color: var(--color-bg);
+  background: var(--color-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-stack);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  background: var(--color-bg); /* Android ブラウザ用フォールバック */
+  color: var(--Color-text, var(--color-text));
+  min-height: 100vh;
+}
+
+/* ヘルパークラスなど、共通で使う小さな調整 */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* リンクの標準スタイル */
+a {
+  color: inherit;
+  text-decoration: none;
+}

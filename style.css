@@ -620,4 +620,92 @@ main {
   }
 }
 
+/* ==========================================
+   Prizes Section
+   ========================================== */
+
+.prizes {
+  width: 90%;
+  max-width: 1000px;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.prizes h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.prizes-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.prize-card {
+  width: 100%;
+  /* padding-box と border-box を用いて角丸グラデーションボーダーを実現 */
+  background: linear-gradient(var(--color-bg-2), var(--color-bg-2)) padding-box,
+              linear-gradient(90deg, #00f5d4 0%, #00bbf9 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 10px 30px rgba(0, 245, 212, 0.05); /* ネオン感のある極僅かなシャドウ */
+}
+
+.prize-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.prize-amount {
+  font-size: 2.6rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00f5d4 0%, #00bbf9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.02em;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .prizes {
+    padding: 3rem 0;
+    gap: 1.5rem;
+  }
+
+  .prizes h2 {
+    font-size: 1.6rem;
+  }
+
+  .prize-card {
+    padding: 2.2rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .prize-label {
+    font-size: 1rem;
+  }
+
+  .prize-amount {
+    font-size: 1.6rem; /* はみ出しや不要な改行を防止 */
+    line-height: 1.3;
+  }
+}
+
 

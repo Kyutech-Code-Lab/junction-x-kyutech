@@ -137,7 +137,7 @@ main {
   gap: 3rem;
   width: 90%;
   max-width: 900px;
-  padding: 5rem 0 3rem 0;
+  padding: 7rem 0 5rem 0;
 
   .concept-container {
     text-align: center;
@@ -239,7 +239,7 @@ main {
 @media (max-width: 768px) {
   .announcement {
     gap: 2rem;
-    padding: 3rem 0;
+    padding: 4.5rem 0;
 
     .concept-title {
       font-size: 2rem;
@@ -279,7 +279,7 @@ main {
   gap: 1rem;
   width: 90%;
   max-width: 900px;
-  padding: 4rem 0;
+  padding: 6rem 0;
 
   h2 {
     font-size: 2rem;
@@ -309,6 +309,7 @@ main {
 
 @media (max-width: 720px) {
   .archive {
+    padding: 4rem 0;
     gap: 0.8rem;
 
     h2 {
@@ -332,7 +333,7 @@ main {
 .partners {
   width: 100%;
   overflow: hidden;
-  padding: 5rem 0 3rem 0;
+  padding: 7rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,7 +440,7 @@ main {
 /* レスポンシブ対応 (モバイルデバイス) */
 @media (max-width: 768px) {
   .partners {
-    padding: 3rem 0 2rem 0;
+    padding: 4.5rem 0 3rem 0;
     gap: 2rem;
     h2 {
       font-size: 1.6rem;
@@ -471,7 +472,7 @@ main {
 .tracks {
   width: 90%;
   max-width: 1000px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,7 +543,7 @@ main {
 /* Responsive for Mobile */
 @media (max-width: 768px) {
   .tracks {
-    padding: 3rem 0;
+    padding: 4rem 0;
     gap: 1rem;
 
     h2 {
@@ -576,7 +577,7 @@ main {
 .schedule {
   width: 90%;
   max-width: 1000px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -670,7 +671,7 @@ main {
 
 @media (max-width: 768px) {
   .schedule {
-    padding: 3rem 0;
+    padding: 4rem 0;
     gap: 1.5rem;
     h2 {
       font-size: 1.6rem;
@@ -704,7 +705,7 @@ main {
 .prizes {
   width: 90%;
   max-width: 1000px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,7 +763,7 @@ main {
 /* モバイル対応 */
 @media (max-width: 768px) {
   .prizes {
-    padding: 3rem 0;
+    padding: 4rem 0;
     gap: 1.5rem;
   }
 
@@ -791,7 +792,7 @@ main {
 .faq {
   width: 90%;
   max-width: 800px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -884,7 +885,7 @@ main {
 /* レスポンシブ */
 @media (max-width: 768px) {
   .faq {
-    padding: 3rem 0;
+    padding: 4rem 0;
     gap: 1.5rem;
 
     h2 {
@@ -908,7 +909,7 @@ main {
 .registration {
   width: 90%;
   max-width: 900px;
-  padding: 5rem 0;
+  padding: 7rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1007,7 +1008,7 @@ main {
    ========================================== */
 @media (max-width: 768px) {
   .registration {
-    padding: 3rem 0;
+    padding: 4.5rem 0;
     gap: 1.8rem;
   }
 

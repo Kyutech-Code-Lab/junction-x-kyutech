@@ -388,6 +388,111 @@ main {
 }
 
 /* ==========================================
+   Tracks Section
+   ========================================== */
+
+.tracks {
+  width: 90%;
+  max-width: 1000px;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    text-transform: uppercase;
+  }
+}
+
+.tracks-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.track-card {
+  background-color: var(--color-bg-2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+  cursor: default;
+
+  h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+}
+
+.track-num {
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.track-desc {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-top: auto; /* Push down to the bottom if content is short */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .tracks {
+    padding: 3rem 0;
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .tracks-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .track-card {
+    padding: 2rem 1.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* ==========================================
    Schedule Section
    ========================================== */
 

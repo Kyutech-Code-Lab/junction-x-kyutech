@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     entryButton.addEventListener("click", function (e) {
       e.preventDefault();
 
+      // すでに募集終了（disabled）している場合は何もしない
+      if (entryButton.classList.contains("disabled")) {
+        return;
+      }
+
       // Microsoft Formsのエントリーページにリダイレクト
       console.log("Entry button clicked - redirecting to entry form");
 

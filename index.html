@@ -12,10 +12,19 @@
     />
     <!-- Load shared fonts / favicon -->
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=6" />
     <script src="script/load-head.js" defer></script>
+    <script src="script/partners.js" defer></script>
+    <script src="script/partners-slider.js" defer></script>
+    <script src="script/faq.js" defer></script>
+    <script src="script/i18n.js" defer></script>
   </head>
   <body>
+    <!-- 言語切り替えボタン -->
+    <div class="language-switcher">
+      <button id="lang-en" class="lang-btn active">EN</button>
+      <button id="lang-ja" class="lang-btn">JP</button>
+    </div>
     <main>
       <section class="hero">
         <video
@@ -45,31 +54,295 @@
         </div>
       </section>
       <section class="announcement">
-        <h1>
-          JUNCTION X KYUTECH 2026<br />
-          OFFICIALLY ANNOUNCED
-        </h1>
+        <div class="concept-container">
+          <span class="concept-tag" data-en="Concept 2026" data-ja="2026 コンセプト">Concept 2026</span>
+          <h2 class="concept-title">INTERACTIVE WORLD</h2>
+          <p class="concept-subtitle">— Hack the World Interface —</p>
+          <div class="concept-description">
+            <p class="desc" data-en="Hack the interfaces between people and systems, and between systems and the real world.<br />Build products that don't end on the screen — products that interact with the world." data-ja="人とシステム、そしてシステムと現実世界のインターフェースをハックする。<br />画面の中だけで終わらない、現実世界と相互作用するプロダクトを創り出そう。">
+              Hack the interfaces between people and systems, and between systems and the real world.<br />
+              Build products that don't end on the screen — products that interact with the world.
+            </p>
+          </div>
+        </div>
 
-        <p class="dates">
-          September 25 – 27, 2026<br />
-          GYMLABO, Kyushu Institute of Technology
-        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <span class="info-card-label" data-en="Date" data-ja="日程">Date</span>
+            <div class="info-card-value" data-en="2026.9.25 Fri - 9.27 Sun" data-ja="2026年9月25日(金) – 27日(日)">2026.9.25 Fri - 9.27 Sun</div>
+          </div>
+          <div class="info-card">
+            <span class="info-card-label" data-en="Venue" data-ja="会場">Venue</span>
+            <div class="info-card-value" data-en="GYMLABO <span class='venue-sub'>(Kyutech Tobata Campus)</span>" data-ja="GYMLABO <span class='venue-sub'>(九州工業大学 戸畑キャンパス)</span>">
+              GYMLABO
+              <span class="venue-sub">(Kyutech Tobata Campus)</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p class="intro">
-          We are excited to announce that JUNCTION X KYUTECH will return in
-          2026.<br />
-          Join us for an international hackathon experience at Kyushu Institute
-          of Technology.
-        </p>
+      <section class="tracks">
+        <h2>Tracks</h2>
+        <p class="tracks-subtitle" data-en="Choose one of three themes" data-ja="3つのトラックから挑戦したいテーマを選び、プロダクトを開発します。">Choose one of three themes</p>
+        <div class="tracks-grid">
+          <div class="track-card">
+            <span class="track-num">01</span>
+            <h3>Hack Extreme Environments</h3>
+            <p class="track-desc" data-en="Space as Constraint" data-ja="Space as Constraint（宇宙空間という制約）">Space as Constraint</p>
+          </div>
+          <div class="track-card">
+            <span class="track-num">02</span>
+            <h3>Hack Connected Everywhere</h3>
+          </div>
+          <div class="track-card">
+            <span class="track-num">03</span>
+            <h3>Hack the Physical World</h3>
+          </div>
+        </div>
+      </section>
 
-        <p class="more">More details will be announced soon.</p>
+      <section class="prizes">
+        <h2>Prizes</h2>
+        <div class="prizes-container">
+          <div class="prize-card">
+            <span class="prize-label" data-en="Grand Prize" data-ja="最優秀賞">Grand Prize</span>
+            <div class="prize-amount" data-en="200,000 JPY + Golden Ticket" data-ja="200,000円 + Golden Ticket">200,000 JPY + Golden Ticket</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule">
+        <h2>Schedule</h2>
+        <div class="schedule-grid">
+          <!-- Day 1 -->
+          <div class="day-schedule">
+            <h3 data-en="Day 1 | Fri 9.25" data-ja="DAY 1 ｜ 9/25(金)">Day 1 | Fri 9.25</h3>
+            <ul>
+              <li>
+                <time>13:00-13:30</time>
+                <span data-en="Registration" data-ja="受付">Registration</span>
+              </li>
+              <li>
+                <time>13:30</time>
+                <span data-en="Opening Ceremony" data-ja="開会式">Opening Ceremony</span>
+              </li>
+              <li>
+                <time>14:00-15:00</time>
+                <span data-en="Team Building" data-ja="チームビルディング">Team Building</span>
+              </li>
+              <li>
+                <time>16:00</time>
+                <span data-en="Hacking Starts" data-ja="ハッキング開始">Hacking Starts</span>
+              </li>
+              <li>
+                <time>19:00-20:00</time>
+                <span data-en="Dinner" data-ja="夕食">Dinner</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Day 2 -->
+          <div class="day-schedule">
+            <h3 data-en="Day 2 | Sat 9.26" data-ja="DAY 2 ｜ 9/26(土)">Day 2 | Sat 9.26</h3>
+            <ul>
+              <li>
+                <time data-en="All day" data-ja="終日">All day</time>
+                <span data-en="Hacking" data-ja="ハッキング">Hacking</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Day 3 -->
+          <div class="day-schedule">
+            <h3 data-en="Day 3 | Sun 9.27" data-ja="DAY 3 ｜ 9/27(日)">Day 3 | Sun 9.27</h3>
+            <ul>
+              <li>
+                <time data-en="Morning" data-ja="午前">Morning</time>
+                <span data-en="Final Hacking Session" data-ja="最終開発セッション">Final Hacking Session</span>
+              </li>
+              <li>
+                <time>12:00</time>
+                <span data-en="Lunch" data-ja="昼食">Lunch</span>
+              </li>
+              <li>
+                <time>13:00</time>
+                <span data-en="Presentations & Demos / Judging" data-ja="プレゼン・デモ／審査">Presentations & Demos / Judging</span>
+              </li>
+              <li>
+                <time>17:00</time>
+                <span data-en="Award Ceremony" data-ja="表彰式">Award Ceremony</span>
+              </li>
+              <li>
+                <time>18:00</time>
+                <span data-en="Networking Party" data-ja="懇親会">Networking Party</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="schedule-note" data-en="* The schedule is subject to change." data-ja="※スケジュールは予告なく変更される場合があります">* The schedule is subject to change.</p>
+      </section>
+
+      <section class="registration" id="registration">
+        <h2>Registration</h2>
+        <p class="registration-subtitle" data-en="Applications are now open!" data-ja="応募フォームから今すぐエントリー！">Applications are now open!</p>
+        
+        <div class="registration-container">
+          <div class="registration-action">
+            <a href="https://hackjunction.app/hackathons/junctionx-kyutech-2026" class="btn-register" target="_blank" rel="noopener noreferrer">
+              <span data-en="Register for JunctionX Kyutech 2026" data-ja="JunctionX Kyutech 2026 にエントリーする">Register for JunctionX Kyutech 2026</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <h2>Partners</h2>
+        <div class="partners-grid">
+          <!-- Dynamically populated by JS -->
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-container">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+              <span class="faq-question-text" data-en="Who can join?" data-ja="参加対象は？">Who can join?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="University students, developers, designers, and planners interested in global hackathons. Up to 4 members per team; solo applications welcome." data-ja="大学生・開発者・デザイナー・プランナーなど、グローバルハッカソンに関心のある人。1チーム最大4名、個人での応募も大歓迎です。">University students, developers, designers, and planners interested in global hackathons. Up to 4 members per team; solo applications welcome.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-question-text" data-en="Is there a fee?" data-ja="参加費は？">Is there a fee?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="None — free to join. Meals and snacks provided during the event." data-ja="無料。イベント中の食事・スナックは提供されます。">None — free to join. Meals and snacks provided during the event.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-question-text" data-en="Is there a selection process?" data-ja="選考はある？">Is there a selection process?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="Yes. Not first come, first served — chosen based on application answers." data-ja="先着順ではなく、応募フォームの回答内容をもとに選考します。">Yes. Not first come, first served — chosen based on application answers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-question-text" data-en="Can I apply solo?" data-ja="1人でも応募できる？">Can I apply solo?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="Yes! Team-building sessions will be held on the first day of the event." data-ja="OK。イベント初日に、チームビルディングがあります。">Yes! Team-building sessions will be held on the first day of the event.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-question-text" data-en="Travel & accommodation?" data-ja="交通費・宿泊は？">Travel & accommodation?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="Self-funded. Rest zone inside the venue. No parking — public transport recommended." data-ja="交通費・宿泊は自己負担。会場内に休憩スペースはあります。駐車場はないため公共交通機関を推奨。">Self-funded. Rest zone inside the venue. No parking — public transport recommended.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+              <span class="faq-question-text" data-en="Who owns the project IP?" data-ja="作品の知的財産権は？">Who owns the project IP?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-6" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="Your team does. JUNCTION X KYUTECH doesn't claim any rights." data-ja="チームに帰属します。運営側は一切の権利を主張しません。">Your team does. JUNCTION X KYUTECH doesn't claim any rights.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+              <span class="faq-question-text" data-en="What language is used during the event?" data-ja="イベントでの使用言語は？">What language is used during the event?</span>
+              <span class="faq-icon-wrapper">
+                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" id="faq-answer-7" role="region">
+              <div class="faq-answer-inner">
+                <p data-en="English is the official language of the event. Event sessions are in English, while team discussions can be in any language." data-ja="イベントの公用語は英語です。アナウンスやデモ、最終プレゼンテーションは英語で行われますが、開発中のチーム内での会話は英語でなくても構いません。">English is the official language of the event. Event sessions are in English, while team discussions can be in any language.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="archive">
         <h2>Looking Back at 2025</h2>
-        <p>The first-ever JunctionX Kyutech was successfully held.</p>
-        <a class="archive-link" href="2025/index.html">View 2025 Event</a>
+        <p data-en="The first-ever JunctionX Kyutech was successfully held." data-ja="日本初開催となったJunctionX Kyutech 2025は、大盛況のうちに終了いたしました。">The first-ever JunctionX Kyutech was successfully held.</p>
+        <a class="btn-archive" href="2025/index.html">
+          <span data-en="View 2025 Event" data-ja="2025年のイベントを見る">View 2025 Event</span>
+          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
       </section>
     </main>
+
+    <a href="https://hackjunction.app/hackathons/junctionx-kyutech-2026" class="floating-apply-btn" target="_blank" rel="noopener noreferrer" aria-label="Register for JunctionX Kyutech 2026" data-en="Register Now" data-ja="エントリーする">
+      Register Now
+    </a>
   </body>
 </html>

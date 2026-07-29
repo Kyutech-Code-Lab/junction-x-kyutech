@@ -9,6 +9,12 @@ const partnersData = [
     sortKey: "きょうせら",
   },
   {
+    name: "KYUSHU ELECTRIC POWER CO.,LTD.",
+    logo: "images/partners/kyushu-electric.bmp",
+    whiteBg: true,
+    sortKey: "きゅうしゅうでんりょく",
+  },
+  {
     name: "LAC",
     logo: "images/partners/lac.jpg",
     whiteBg: true,

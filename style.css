@@ -687,6 +687,85 @@ main {
 }
 
 /* ==========================================
+   Judges Section
+   ========================================== */
+
+.judges {
+  width: 90%;
+  max-width: 1000px;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.judges h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.judges-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.judge-card {
+  min-width: 0;
+  padding: 2rem;
+  background-color: var(--color-bg-2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.judge-info {
+  min-width: 0;
+}
+
+.judge-info h3 {
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+  font-size: 1.3rem;
+  line-height: 1.35;
+}
+
+.judge-info p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .judges {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .judges h2 {
+    font-size: 1.6rem;
+  }
+
+  .judges-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .judge-card {
+    padding: 1.5rem;
+  }
+
+  .judge-info h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* ==========================================
    Prizes Section
    ========================================== */
 
@@ -1086,5 +1165,3 @@ main {
     font-size: 0.8rem;
   }
 }
-
-

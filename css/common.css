@@ -23,7 +23,6 @@
 /* ベースの HTML / body 設定（Android ブラウザ対応） */
 html {
   background-color: var(--color-bg);
-  background: var(--color-bg);
   scroll-behavior: smooth;
 }
 
@@ -32,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-bg);
-  background: var(--color-bg); /* Android ブラウザ用フォールバック */
   color: var(--Color-text, var(--color-text));
   min-height: 100vh;
 }

@@ -3,13 +3,13 @@
 */
 (function () {
   try {
-    var scriptEl =
+    const scriptEl =
       document.currentScript ||
       (function () {
-        var s = document.getElementsByTagName("script");
+        const s = document.getElementsByTagName("script");
         return s[s.length - 1];
       })();
-    var includeUrl = new URL("../includes/head.html", scriptEl.src).href;
+    const includeUrl = new URL("../includes/head.html", scriptEl.src).href;
     fetch(includeUrl)
       .then(function (res) {
         if (!res.ok) throw new Error("取得に失敗しました: " + includeUrl);
@@ -17,7 +17,7 @@
       })
       .then(function (html) {
         if (!html) return;
-        var template = document.createElement("template");
+        const template = document.createElement("template");
         template.innerHTML = html.trim();
         // template の子ノードを head に追加
         Array.prototype.slice

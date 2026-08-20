@@ -140,7 +140,9 @@ class FAQManager {
 
     // 既存のFAQアイテムを削除
     const existingItems = faqSection.querySelectorAll(".faq-item");
-    existingItems.forEach((item) => item.remove());
+    existingItems.forEach((item) => {
+      item.remove();
+    });
 
     // FAQアイテムを生成
     faqData.forEach((faq) => {

@@ -25,8 +25,8 @@
   <body>
     <!-- 言語切り替えボタン -->
     <div class="language-switcher">
-      <button id="lang-en" class="lang-btn active">EN</button>
-      <button id="lang-ja" class="lang-btn">JP</button>
+      <button type="button" id="lang-en" class="lang-btn active">EN</button>
+      <button type="button" id="lang-ja" class="lang-btn">JP</button>
     </div>
 
     <div class="container">
@@ -110,6 +110,7 @@
               loop
             >
               <source src="videos/report.mp4" type="video/mp4" />
+              <track kind="captions" src="" srclang="ja" label="日本語" />
               <p
                 class="video-fallback"
                 data-en="Your browser does not support the video tag. Please try using a modern browser."
@@ -119,12 +120,13 @@
                 modern browser.
               </p>
             </video>
-            <button class="video-play-button" id="videoPlayButton">
+            <button type="button" class="video-play-button" id="videoPlayButton">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <title>動画再生</title>
                 <circle
                   cx="12"
                   cy="12"
@@ -415,12 +417,13 @@
 
         <!-- 申し込みボタンとSNSリンク -->
         <div class="entry-section fade-in-up delay-4">
-          <a
-            href="#"
+          <button
+            type="button"
             class="entry-button disabled"
+            disabled
             data-en="Registration has closed"
             data-ja="募集は終了しました"
-            >Registration has closed</a
+            >Registration has closed</button
           >
           <p
             class="sns-info"

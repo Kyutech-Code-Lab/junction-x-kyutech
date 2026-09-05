@@ -21,6 +21,16 @@ const judgesData = [
       ja: "キックスペーステクノロジーズ株式会社<br>代表取締役CEO",
     },
   },
+  {
+    name: {
+      en: "Mr. Takaomi Muraoka",
+      ja: "村岡 剛臣氏",
+    },
+    role: {
+      en: "General Manager, Digital Engineering Div., TOYOTA Body Research & Development Co., Ltd.",
+      ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部　部長",
+    },
+  },
 ];
 
 function createJudgeCard(judge) {

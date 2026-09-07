@@ -33,6 +33,11 @@ const partnersData = [
 		whiteBg: true,
 	},
 	{
+		name: "OBIC Co., Ltd.",
+		logo: "images/partners/obic.png",
+		whiteBg: true,
+	},
+	{
 		name: "pixiv",
 		logo: "images/partners/pixiv.png",
 		whiteBg: true,

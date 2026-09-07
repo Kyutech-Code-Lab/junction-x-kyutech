@@ -431,6 +431,10 @@ main {
   transform: scale(1);
 }
 
+.partner-logo img[src*="obic"] {
+  transform: scale(4);
+}
+
 @media (max-width: 768px) {
   .partners {
     padding: 4.5rem 0 3rem 0;

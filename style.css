@@ -1085,8 +1085,10 @@ main {
 }
 
 .btn-register {
-	background: var(--primary);
-	color: #000000;
+	background: #555555;
+	color: #9ca3af;
+	border: none;
+	font-family: var(--font-stack);
 	font-weight: 700;
 	font-size: 1.1rem;
 	padding: 1.2rem 2.5rem;
@@ -1094,22 +1096,11 @@ main {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.8rem;
-	transition:
-		transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-		box-shadow 0.3s ease;
-	box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
-}
-
-.btn-register:hover {
-	box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
+	cursor: not-allowed;
 }
 
 .btn-icon {
 	transition: transform 0.3s ease;
-}
-
-.btn-register:hover .btn-icon {
-	transform: translateX(5px);
 }
 
 /* ==========================================
@@ -1120,21 +1111,17 @@ main {
 	bottom: 2.5rem;
 	right: 2.5rem;
 	z-index: 999;
-	background: linear-gradient(135deg, #00f5d4 0%, #00bbf9 100%);
-	color: #000000;
+	background: #555555;
+	color: #9ca3af;
+	border: none;
+	font-family: var(--font-stack);
 	font-weight: 900;
 	font-size: 1.1rem;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	padding: 1.2rem 2.2rem;
 	border-radius: 12px;
-	transition:
-		transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-		box-shadow 0.3s ease;
-}
-
-.floating-apply-btn:hover {
-	box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
+	cursor: not-allowed;
 }
 
 /* ==========================================

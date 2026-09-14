@@ -8,7 +8,7 @@ const judgesData = [
     },
     role: {
       en: "Manager, Innovation Group, Digital Transformation Promotion Division, Technical Solution Headquarters, Kyushu Electric Power Company, Incorporated",
-      ja: "九州電力株式会社　テクニカルソリューション統括本部　ＤＸ推進本部<br>イノベーショングループ長",
+      ja: "九州電力株式会社 テクニカルソリューション統括本部 DX推進本部<br>イノベーショングループ長",
     },
   },
   {
@@ -28,7 +28,17 @@ const judgesData = [
     },
     role: {
       en: "General Manager, Digital Engineering Div., TOYOTA Body Research & Development Co., Ltd.",
-      ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部　部長",
+      ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部 部長",
+    },
+  },
+  {
+    name: {
+      en: "Mr. Kento Uchiyama",
+      ja: "内山 絢登氏",
+    },
+    role: {
+      en: "COO, Orboh, Inc.",
+      ja: "Orboh, Inc.<br>COO",
     },
   },
 ];

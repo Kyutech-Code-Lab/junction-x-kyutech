@@ -22,6 +22,9 @@ const judgesData = [
     },
   },
   {
+    comingSoon: true,
+  },
+  {
     name: {
       en: "Mr. Rin Sato",
       ja: "佐藤 凜氏",
@@ -46,6 +49,12 @@ const judgesData = [
 function createJudgeCard(judge) {
   const card = document.createElement("article");
   card.className = "judge-card";
+
+  if (judge.comingSoon) {
+    card.classList.add("judge-card-coming-soon");
+    card.innerHTML = '<div class="judge-info"><h3>Coming Soon</h3></div>';
+    return card;
+  }
 
   card.innerHTML = `
     <div class="judge-info">

@@ -3,12 +3,12 @@
 const judgesData = [
   {
     name: {
-      en: "Mr. Kenichi Baba",
-      ja: "馬場 研一氏",
+      en: "Mr. Rin Sato",
+      ja: "佐藤 凜氏",
     },
     role: {
-      en: "NEC Corporation<br>Aerospace Business Division<br>Senior Executive Professional",
-      ja: "日本電気株式会社<br>エアロスペース事業部門<br>主席プロフェッショナル",
+      en: "Co-Founder & CEO, Kick Space Technologies Inc.",
+      ja: "キックスペーステクノロジーズ株式会社<br>代表取締役CEO",
     },
   },
   {
@@ -23,22 +23,12 @@ const judgesData = [
   },
   {
     name: {
-      en: "Mr. Takaomi Muraoka",
-      ja: "村岡 剛臣氏",
+      en: "Mr. Kenichi Baba",
+      ja: "馬場 研一氏",
     },
     role: {
-      en: "General Manager, Digital Engineering Div., TOYOTA Body Research & Development Co., Ltd.",
-      ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部 部長",
-    },
-  },
-  {
-    name: {
-      en: "Mr. Rin Sato",
-      ja: "佐藤 凜氏",
-    },
-    role: {
-      en: "Co-Founder & CEO, Kick Space Technologies Inc.",
-      ja: "キックスペーステクノロジーズ株式会社<br>代表取締役CEO",
+      en: "NEC Corporation<br>Aerospace Business Division<br>Senior Executive Professional",
+      ja: "日本電気株式会社<br>エアロスペース事業部門<br>主席プロフェッショナル",
     },
   },
   {
@@ -49,6 +39,16 @@ const judgesData = [
     role: {
       en: "COO, Orboh, Inc.",
       ja: "Orboh, Inc.<br>COO",
+    },
+  },
+  {
+    name: {
+      en: "Mr. Takaomi Muraoka",
+      ja: "村岡 剛臣氏",
+    },
+    role: {
+      en: "General Manager, Digital Engineering Div., TOYOTA Body Research & Development Co., Ltd.",
+      ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部 部長",
     },
   },
 ];

@@ -3,6 +3,16 @@
 const judgesData = [
   {
     name: {
+      en: "Mr. Kenichi Baba",
+      ja: "馬場 研一氏",
+    },
+    role: {
+      en: "NEC Corporation<br>Aerospace Business Division<br>Senior Executive Professional",
+      ja: "日本電気株式会社<br>エアロスペース事業部門<br>主席プロフェッショナル",
+    },
+  },
+  {
+    name: {
       en: "Mr. Jirou Kamegawa",
       ja: "亀川 滋郎氏",
     },
@@ -20,9 +30,6 @@ const judgesData = [
       en: "General Manager, Digital Engineering Div., TOYOTA Body Research & Development Co., Ltd.",
       ja: "株式会社トヨタ車体研究所<br>デジタルエンジニアリング部 部長",
     },
-  },
-  {
-    comingSoon: true,
   },
   {
     name: {

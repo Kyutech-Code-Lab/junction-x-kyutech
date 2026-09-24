@@ -58,11 +58,6 @@ const partnersData = [
 		whiteBg: true,
 	},
 	{
-		name: "TOYOTA AUTO BODY R&D.",
-		logo: "images/partners/toyota-auto-body-randd.png",
-		whiteBg: true,
-	},
-	{
 		name: "WingArc1st",
 		logo: "images/partners/wingarc1st.svg",
 		whiteBg: true,

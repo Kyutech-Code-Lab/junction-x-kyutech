@@ -33,12 +33,12 @@ const judgesData = [
 	},
 	{
 		name: {
-			en: "Mr. Kento Uchiyama",
-			ja: "内山 絢登氏",
+			en: "Mr. Kota Ueda",
+			ja: "上田 康太氏",
 		},
 		role: {
-			en: "COO, Orboh, Inc.",
-			ja: "Orboh, Inc.<br>COO",
+			en: "CTO, Orboh, Inc.",
+			ja: "Orboh, Inc.<br>CTO",
 		},
 	},
 ];

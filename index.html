@@ -12,13 +12,14 @@
     />
     <!-- Load shared fonts / favicon -->
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="style.css?v=13" />
+    <link rel="stylesheet" href="style.css?v=16" />
     <script src="script/load-head.js" defer></script>
     <script src="script/partners.js?v=2" defer></script>
     <script src="script/partners-slider.js" defer></script>
     <script src="script/faq.js" defer></script>
     <script src="script/judges.js?v=8" defer></script>
     <script src="script/i18n.js" defer></script>
+    <script src="script/event-report.js?v=3" defer></script>
   </head>
   <body>
     <!-- 言語切り替えボタン -->
@@ -79,6 +80,22 @@
               <span class="venue-sub">(Kyutech Tobata Campus)</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="event-report" aria-labelledby="event-report-heading">
+        <h2 id="event-report-heading">Event Report</h2>
+        <p class="event-report-description" data-en="Relive the highlights of JunctionX Kyutech 2026." data-ja="JunctionX Kyutech 2026の様子を動画でご覧ください。">Relive the highlights of JunctionX Kyutech 2026.</p>
+        <div class="event-report-player">
+          <video controls playsinline preload="metadata" aria-labelledby="event-report-heading">
+            <source src="videos/report2026.mp4" type="video/mp4" />
+            <p data-en="Your browser does not support video playback." data-ja="お使いのブラウザは動画の再生に対応していません。">Your browser does not support video playback.</p>
+          </video>
+          <button type="button" class="event-report-play" aria-label="Play video / 動画を再生" hidden>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
         </div>
       </section>
 

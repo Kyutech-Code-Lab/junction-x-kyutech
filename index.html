@@ -87,8 +87,10 @@
         <h2 id="event-report-heading">Event Report</h2>
         <p class="event-report-description" data-en="Relive the highlights of JunctionX Kyutech 2026." data-ja="JunctionX Kyutech 2026の様子を動画でご覧ください。">Relive the highlights of JunctionX Kyutech 2026.</p>
         <div class="event-report-player">
-          <video controls playsinline preload="metadata" aria-labelledby="event-report-heading">
+          <video controls playsinline preload="metadata" poster="images/report2026-thumbnail.jpg" aria-labelledby="event-report-heading">
             <source src="videos/report2026.mp4" type="video/mp4" />
+            <track kind="captions" src="videos/report2026-en.vtt" srclang="en" label="English" />
+            <track kind="captions" src="videos/report2026-ja.vtt" srclang="ja" label="日本語" />
             <p data-en="Your browser does not support video playback." data-ja="お使いのブラウザは動画の再生に対応していません。">Your browser does not support video playback.</p>
           </video>
           <button type="button" class="event-report-play" aria-label="Play video / 動画を再生" hidden>

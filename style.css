@@ -454,11 +454,16 @@ main {
 }
 
 /* グリッドコンテナ */
+.partners-grid,
+.supported-by-logos {
+	column-gap: 3rem;
+}
+
 .partners-grid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2.5rem 3rem;
+	row-gap: 2.5rem;
 	max-width: 800px;
 	width: 90%;
 	align-items: center;
@@ -483,6 +488,10 @@ main {
 /* 黒文字など背景色への配慮が必要なロゴのみ最小限の白背景を適用 */
 .partner-logo.white-bg {
 	background-color: #ffffff;
+}
+
+.partner-logo.white-bg,
+.supported-by-logos img {
 	border-radius: 4px;
 }
 
@@ -528,9 +537,14 @@ main {
 		}
 	}
 
+	.partners-grid,
+	.supported-by-logos {
+		column-gap: 2rem;
+	}
+
 	.partners-grid {
 		max-width: 400px;
-		gap: 1.5rem 2rem;
+		row-gap: 1.5rem;
 		width: 95%;
 	}
 
@@ -568,7 +582,6 @@ main {
 	grid-template-columns: repeat(2, minmax(0, 250px));
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
 	width: 100%;
 }
 

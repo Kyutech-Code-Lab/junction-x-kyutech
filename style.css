@@ -565,8 +565,9 @@ main {
 
 .supported-by-logos {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	gap: 1rem;
 	width: 100%;
 }
 
@@ -575,6 +576,14 @@ main {
 	max-width: 100%;
 	height: auto;
 	display: block;
+}
+
+.supported-by-names {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	line-height: 1.6;
 }
 
 @media (max-width: 768px) {
